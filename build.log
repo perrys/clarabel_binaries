@@ -1,0 +1,3576 @@
+Cloning into 'Clarabel.cpp'...
+Submodule 'Clarabel.rs' (https://github.com/oxfordcontrol/Clarabel.rs.git) registered for path 'Clarabel.rs'
+Cloning into '/home/stu/dev/Clarabel.cpp/Clarabel.rs'...
+Submodule path 'Clarabel.rs': checked out '25540f559592068d0c8a80e46ded1b21760212a1'
+Note: switching to 'tags/v0.11.1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 0de6259 cmake options cleanup (#69)
+Building debug library and tests...
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Clarabel.cpp: `Eigen3` package found.  Version 3.4.0.
+-- Cargo feature list: clarabel/buildinfo
+-- Cargo options: ;--features=clarabel/buildinfo
+-- Clarabel.cpp: `googletest` targets not found. Attempting to fetch contents...
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Clarabel.cpp: `googletest` targets added.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/stu/dev/Clarabel.cpp/build
+    Updating crates.io index
+     Locking 43 packages to latest compatible versions
+   Compiling proc-macro2 v1.0.95
+   Compiling unicode-ident v1.0.18
+   Compiling ident_case v1.0.1
+   Compiling fnv v1.0.7
+   Compiling serde v1.0.219
+   Compiling strsim v0.11.1
+   Compiling rustversion v1.0.21
+   Compiling memchr v2.7.5
+   Compiling syn v1.0.109
+   Compiling itoa v1.0.15
+   Compiling semver v1.0.26
+   Compiling libc v0.2.174
+   Compiling ryu v1.0.20
+   Compiling camino v1.1.11
+   Compiling thiserror v2.0.12
+   Compiling serde_json v1.0.142
+   Compiling strsim v0.10.0
+   Compiling anyhow v1.0.98
+   Compiling regex-syntax v0.8.5
+   Compiling powerfmt v0.2.0
+   Compiling autocfg v1.5.0
+   Compiling deranged v0.4.0
+   Compiling num_threads v0.1.7
+   Compiling num-conv v0.1.0
+   Compiling time-core v0.1.4
+   Compiling thiserror v1.0.69
+   Compiling once_cell v1.21.3
+   Compiling either v1.15.0
+   Compiling paste v1.0.15
+   Compiling lazy_static v1.5.0
+   Compiling cfg-if v1.0.1
+   Compiling num-traits v0.2.19
+   Compiling itertools v0.11.0
+   Compiling aho-corasick v1.1.3
+   Compiling quote v1.0.40
+   Compiling vergen-lib v0.1.6
+   Compiling vergen v9.0.6
+   Compiling syn v2.0.104
+   Compiling time v0.3.41
+   Compiling sysinfo v0.34.2
+   Compiling amd v0.2.2
+   Compiling regex-automata v0.4.9
+   Compiling darling_core v0.14.4
+   Compiling darling_core v0.20.11
+   Compiling regex v1.11.1
+   Compiling serde_derive v1.0.219
+   Compiling thiserror-impl v2.0.12
+   Compiling thiserror-impl v1.0.69
+   Compiling enum_dispatch v0.3.13
+   Compiling darling_macro v0.14.4
+   Compiling darling_macro v0.20.11
+   Compiling darling v0.14.4
+   Compiling derive_builder_core v0.11.2
+   Compiling darling v0.20.11
+   Compiling derive_builder_core v0.20.2
+   Compiling derive_builder_macro v0.11.2
+   Compiling derive_builder_macro v0.20.2
+   Compiling derive_builder v0.11.2
+   Compiling derive_builder v0.20.2
+   Compiling cargo-platform v0.1.9
+   Compiling serde-big-array v0.5.1
+   Compiling rustc_version v0.4.1
+   Compiling cargo_metadata v0.19.2
+   Compiling clarabel v0.11.1 (/home/stu/dev/Clarabel.cpp/Clarabel.rs)
+warning: hiding a lifetime that's elided elsewhere is confusing
+  --> /home/stu/dev/Clarabel.cpp/Clarabel.rs/src/solver/core/kktsolvers/direct/quasidef/datamaps.rs:26:39
+   |
+26 |     pub(crate) fn to_sparse_expansion(&self) -> Option<SparseExpansionCone<T>> {
+   |                                       ^^^^^            ---------------------- the same lifetime is hidden here
+   |                                       |
+   |                                       the lifetime is elided here
+   |
+   = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+   = note: `#[warn(mismatched_lifetime_syntaxes)]` on by default
+help: use `'_` for type paths
+   |
+26 |     pub(crate) fn to_sparse_expansion(&self) -> Option<SparseExpansionCone<'_, T>> {
+   |                                                                            +++
+
+warning: `clarabel` (lib) generated 1 warning
+   Compiling clarabel_c v0.1.0 (/home/stu/dev/Clarabel.cpp/rust_wrapper)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 7.57s
+    Updating crates.io index
+     Ignored package `cbindgen v0.29.0` is already installed, use --force to override
+[  0%] Built target libclarabel_c
+[  1%] Building C object examples/c/CMakeFiles/utils_c.dir/utils.c.o
+[  2%] Linking C static library libutils_c.a
+[  2%] Built target utils_c
+[  3%] Building C object examples/c/CMakeFiles/example_expcone.dir/example_expcone.c.o
+[  5%] Linking C executable example_expcone
+[  5%] Built target example_expcone
+[  6%] Building C object examples/c/CMakeFiles/example_lp.dir/example_lp.c.o
+[  7%] Linking C executable example_lp
+[  7%] Built target example_lp
+[  8%] Building C object examples/c/CMakeFiles/example_powcone.dir/example_powcone.c.o
+[ 10%] Linking C executable example_powcone
+[ 10%] Built target example_powcone
+[ 11%] Building C object examples/c/CMakeFiles/example_genpowcone.dir/example_genpowcone.c.o
+[ 12%] Linking C executable example_genpowcone
+[ 12%] Built target example_genpowcone
+[ 13%] Building C object examples/c/CMakeFiles/example_qp.dir/example_qp.c.o
+[ 15%] Linking C executable example_qp
+[ 15%] Built target example_qp
+[ 16%] Building C object examples/c/CMakeFiles/example_qp_f32.dir/example_qp_f32.c.o
+[ 17%] Linking C executable example_qp_f32
+[ 17%] Built target example_qp_f32
+[ 18%] Building C object examples/c/CMakeFiles/example_qp_f64.dir/example_qp_f64.c.o
+[ 20%] Linking C executable example_qp_f64
+[ 20%] Built target example_qp_f64
+[ 21%] Building C object examples/c/CMakeFiles/example_socp.dir/example_socp.c.o
+[ 22%] Linking C executable example_socp
+[ 22%] Built target example_socp
+[ 24%] Building C object examples/c/CMakeFiles/example_sdp.dir/example_sdp.c.o
+[ 25%] Linking C executable example_sdp
+[ 25%] Built target example_sdp
+[ 26%] Building C object examples/c/CMakeFiles/example_json.dir/example_json.c.o
+[ 27%] Linking C executable example_json
+[ 27%] Built target example_json
+[ 29%] Building C object examples/c/CMakeFiles/example_print_stream.dir/example_print_stream.c.o
+[ 30%] Linking C executable example_print_stream
+[ 30%] Built target example_print_stream
+[ 31%] Building C object examples/c/CMakeFiles/example_callback.dir/example_callback.c.o
+[ 32%] Linking C executable example_callback
+[ 32%] Built target example_callback
+[ 34%] Building C object examples/c/CMakeFiles/example_callback_with_state.dir/example_callback_with_state.c.o
+[ 35%] Linking C executable example_callback_with_state
+[ 35%] Built target example_callback_with_state
+[ 36%] Building C object examples/c/CMakeFiles/example_pardiso_mkl.dir/example_pardiso_mkl.c.o
+[ 37%] Linking C executable example_pardiso_mkl
+[ 37%] Built target example_pardiso_mkl
+[ 39%] Building CXX object examples/cpp/CMakeFiles/cpp_example_expcone.dir/example_expcone.cpp.o
+[ 40%] Linking CXX executable cpp_example_expcone
+[ 40%] Built target cpp_example_expcone
+[ 41%] Building CXX object examples/cpp/CMakeFiles/cpp_example_lp.dir/example_lp.cpp.o
+[ 43%] Linking CXX executable cpp_example_lp
+[ 43%] Built target cpp_example_lp
+[ 44%] Building CXX object examples/cpp/CMakeFiles/cpp_example_powcone.dir/example_powcone.cpp.o
+[ 45%] Linking CXX executable cpp_example_powcone
+[ 45%] Built target cpp_example_powcone
+[ 46%] Building CXX object examples/cpp/CMakeFiles/cpp_example_genpowcone.dir/example_genpowcone.cpp.o
+[ 48%] Linking CXX executable cpp_example_genpowcone
+[ 48%] Built target cpp_example_genpowcone
+[ 49%] Building CXX object examples/cpp/CMakeFiles/cpp_example_qp.dir/example_qp.cpp.o
+[ 50%] Linking CXX executable cpp_example_qp
+[ 50%] Built target cpp_example_qp
+[ 51%] Building CXX object examples/cpp/CMakeFiles/cpp_example_socp.dir/example_socp.cpp.o
+[ 53%] Linking CXX executable cpp_example_socp
+[ 53%] Built target cpp_example_socp
+[ 54%] Building CXX object examples/cpp/CMakeFiles/cpp_example_sdp.dir/example_sdp.cpp.o
+[ 55%] Linking CXX executable cpp_example_sdp
+[ 55%] Built target cpp_example_sdp
+[ 56%] Building CXX object examples/cpp/CMakeFiles/cpp_example_json.dir/example_json.cpp.o
+[ 58%] Linking CXX executable cpp_example_json
+[ 58%] Built target cpp_example_json
+[ 59%] Building CXX object examples/cpp/CMakeFiles/cpp_example_print_stream.dir/example_print_stream.cpp.o
+[ 60%] Linking CXX executable cpp_example_print_stream
+[ 60%] Built target cpp_example_print_stream
+[ 62%] Building CXX object examples/cpp/CMakeFiles/cpp_example_callback.dir/example_callback.cpp.o
+[ 63%] Linking CXX executable cpp_example_callback
+[ 63%] Built target cpp_example_callback
+[ 64%] Building CXX object examples/cpp/CMakeFiles/cpp_example_callback_with_state.dir/example_callback_with_state.cpp.o
+[ 65%] Linking CXX executable cpp_example_callback_with_state
+[ 65%] Built target cpp_example_callback_with_state
+[ 67%] Building CXX object examples/cpp/CMakeFiles/cpp_example_faer.dir/example_faer.cpp.o
+[ 68%] Linking CXX executable cpp_example_faer
+[ 68%] Built target cpp_example_faer
+[ 69%] Building CXX object examples/cpp/CMakeFiles/cpp_example_pardiso_mkl.dir/example_pardiso_mkl.cpp.o
+[ 70%] Linking CXX executable cpp_example_pardiso_mkl
+[ 70%] Built target cpp_example_pardiso_mkl
+[ 72%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 73%] Linking CXX static library ../../../lib/libgtest.a
+[ 73%] Built target gtest
+[ 74%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 75%] Linking CXX static library ../../../lib/libgtest_main.a
+[ 75%] Built target gtest_main
+[ 77%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/api_dimension_checks.cpp.o
+[ 78%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_lp.cpp.o
+[ 79%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_qp.cpp.o
+[ 81%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_eq_constrained.cpp.o
+[ 82%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_powcone.cpp.o
+[ 83%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_genpowcone.cpp.o
+[ 84%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_expcone.cpp.o
+[ 86%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_sdp.cpp.o
+[ 87%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_socp.cpp.o
+[ 88%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_unconstrained.cpp.o
+[ 89%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/mixed_conic.cpp.o
+[ 91%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/data_updating.cpp.o
+[ 92%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/sdp_chordal.cpp.o
+[ 93%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/get_info.cpp.o
+[ 94%] Linking CXX executable clarabel_cpp_tests
+[ 94%] Built target clarabel_cpp_tests
+[ 96%] Building CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 97%] Linking CXX static library ../../../lib/libgmock.a
+[ 97%] Built target gmock
+[ 98%] Building CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[100%] Linking CXX static library ../../../lib/libgmock_main.a
+[100%] Built target gmock_main
+Running main() from /home/stu/dev/Clarabel.cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 46 tests from 13 test suites.
+[----------] Global test environment set-up.
+[----------] 6 tests from DimensionChecksTest
+[ RUN      ] DimensionChecksTest.Working
+[       OK ] DimensionChecksTest.Working (0 ms)
+[ RUN      ] DimensionChecksTest.BadP
+[       OK ] DimensionChecksTest.BadP (0 ms)
+[ RUN      ] DimensionChecksTest.BadARows
+[       OK ] DimensionChecksTest.BadARows (0 ms)
+[ RUN      ] DimensionChecksTest.BadACols
+[       OK ] DimensionChecksTest.BadACols (0 ms)
+[ RUN      ] DimensionChecksTest.PNotSquare
+[       OK ] DimensionChecksTest.PNotSquare (0 ms)
+[ RUN      ] DimensionChecksTest.BadCones
+[       OK ] DimensionChecksTest.BadCones (0 ms)
+[----------] 6 tests from DimensionChecksTest (0 ms total)
+
+[----------] 3 tests from BasicLPTest
+[ RUN      ] BasicLPTest.Feasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 6
+  nnz(P)        = 0
+  nnz(A)        = 6
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 6
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +0.0000e+00  -8.7426e+00  8.74e+00  2.27e-01  5.16e-17  1.00e+00  1.91e+00   ------   
+  1  -1.9601e+00  -3.2218e+00  6.44e-01  3.29e-02  9.86e-17  1.65e-01  3.37e-01  8.56e-01  
+  2  -2.9735e+00  -3.0310e+00  1.93e-02  1.32e-03  1.01e-16  9.69e-03  1.60e-02  9.73e-01  
+  3  -2.9997e+00  -3.0003e+00  1.92e-04  1.32e-05  4.50e-17  9.73e-05  1.61e-04  9.90e-01  
+  4  -3.0000e+00  -3.0000e+00  1.92e-06  1.32e-07  4.50e-17  9.73e-07  1.61e-06  9.90e-01  
+  5  -3.0000e+00  -3.0000e+00  1.92e-08  1.32e-09  2.79e-15  9.73e-09  1.61e-08  9.90e-01  
+  6  -3.0000e+00  -3.0000e+00  1.92e-10  1.32e-11  1.01e-16  9.73e-11  1.61e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 589.255µs
+[       OK ] BasicLPTest.Feasible (0 ms)
+[ RUN      ] BasicLPTest.PrimalInfeasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 6
+  nnz(P)        = 0
+  nnz(A)        = 6
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 6
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +7.4983e-01  -5.9498e+00  6.70e+00  5.57e-01  9.04e-01  1.00e+00  2.12e+00   ------   
+  1  -2.5313e-01  -2.3276e+00  2.07e+00  2.66e-01  5.46e-01  4.72e-01  8.11e-01  6.45e-01  
+  2  -2.2767e+02  -2.1911e+02  3.90e-02  3.24e-02  6.41e-02  5.12e+01  1.36e-01  9.72e-01  
+  3  -4.2035e+03  -3.5181e+03  1.95e-01  3.93e-04  7.83e-04  6.95e+02  1.69e-03  9.88e-01  
+  4  -4.2069e+05  -3.5134e+05  1.97e-01  3.93e-06  7.82e-06  6.94e+04  1.69e-05  9.90e-01  
+  5  -4.2070e+07  -3.5133e+07  1.97e-01  3.93e-08  7.82e-08  6.94e+06  1.69e-07  9.90e-01  
+  6  -4.2057e+09  -3.5122e+09  1.97e-01  3.93e-10  7.82e-10  6.93e+08  1.69e-09  9.90e-01  
+  7  -4.2057e+11  -3.5122e+11  1.97e-01  3.93e-12  7.82e-12  6.93e+10  1.69e-11  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = DualInfeasible
+solve time = 773.054µs
+[       OK ] BasicLPTest.PrimalInfeasible (0 ms)
+[ RUN      ] BasicLPTest.InfeasibleIllCond
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 6
+  nnz(P)        = 0
+  nnz(A)        = 6
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 6
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +4.4409e+08  -1.8002e+05  2.47e+03  1.12e-06  2.25e-09  1.00e+00  5.29e+06   ------   
+  1  +4.2627e+08  -1.8002e+07  2.47e+01  1.17e-06  2.30e-09  1.00e+02  5.29e+04  9.90e-01  
+  2  -1.3559e+09  -1.8002e+09  3.28e-01  3.67e-07  4.69e-10  1.00e+04  5.29e+02  9.90e-01  
+  3  -1.7958e+11  -1.8002e+11  2.47e-03  2.77e-09  3.89e-12  1.00e+06  5.29e+00  9.90e-01  
+  4  -1.8002e+13  -1.8002e+13  1.91e-05  2.77e-11  3.88e-14  1.00e+08  5.29e-02  9.90e-01  
+  5  -1.7995e+15  -1.7995e+15  5.31e-06  2.83e-13  3.97e-16  1.00e+10  5.41e-04  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = DualInfeasible
+solve time = 504.957µs
+[       OK ] BasicLPTest.InfeasibleIllCond (0 ms)
+[----------] 3 tests from BasicLPTest (2 ms total)
+
+[----------] 3 tests from BasicQPTest
+[ RUN      ] BasicQPTest.Univariate
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 1
+  constraints   = 1
+  nnz(P)        = 1
+  nnz(A)        = 1
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 1
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +1.2500e-01  -1.1250e+00  1.25e+00  2.00e-01  1.00e+00  1.00e+00  1.00e+00   ------   
+  1  +1.3954e-02  -2.0322e-01  2.17e-01  3.16e-03  2.22e-02  2.61e-01  1.10e-01  9.90e-01  
+  2  +9.3220e-05  -1.3977e-02  1.41e-02  3.78e-05  2.30e-04  1.44e-02  6.06e-03  9.90e-01  
+  3  +2.5991e-08  -2.3034e-04  2.30e-04  3.86e-07  2.31e-06  2.37e-04  9.81e-05  9.90e-01  
+  4  +2.6579e-12  -2.3288e-06  2.33e-06  3.86e-09  2.31e-08  2.39e-06  9.92e-07  9.90e-01  
+  5  +2.6585e-16  -2.3290e-08  2.33e-08  3.86e-11  2.31e-10  2.39e-08  9.92e-09  9.90e-01  
+  6  +2.6586e-20  -2.3290e-10  2.33e-10  3.86e-13  2.31e-12  2.39e-10  9.92e-11  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 304.359µs
+[       OK ] BasicQPTest.Univariate (0 ms)
+[ RUN      ] BasicQPTest.Feasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 6
+  nnz(P)        = 3
+  nnz(A)        = 8
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 6
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +8.9060e-01  -1.3057e+00  2.20e+00  5.55e-01  1.89e-16  1.00e+00  2.47e+00   ------   
+  1  +1.4696e+00  +1.0134e+00  4.50e-01  1.45e-01  1.44e-16  1.48e-01  6.24e-01  8.06e-01  
+  2  +1.8977e+00  +1.8463e+00  2.78e-02  2.75e-03  1.22e-16  8.33e-03  3.51e-02  9.90e-01  
+  3  +1.8851e+00  +1.8753e+00  5.21e-03  8.62e-05  2.01e-16  1.20e-03  4.42e-03  9.72e-01  
+  4  +1.8811e+00  +1.8791e+00  1.07e-03  1.04e-05  9.95e-17  2.53e-04  7.58e-04  8.89e-01  
+  5  +1.8802e+00  +1.8799e+00  1.50e-04  1.08e-06  7.09e-17  3.62e-05  9.79e-05  8.99e-01  
+  6  +1.8800e+00  +1.8800e+00  5.24e-06  2.99e-08  7.10e-17  1.28e-06  3.36e-06  9.73e-01  
+  7  +1.8800e+00  +1.8800e+00  5.71e-08  3.18e-10  1.00e-16  1.40e-08  3.67e-08  9.89e-01  
+  8  +1.8800e+00  +1.8800e+00  5.72e-10  3.18e-12  5.02e-15  1.40e-10  3.67e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 705.104µs
+[       OK ] BasicQPTest.Feasible (0 ms)
+[ RUN      ] BasicQPTest.PrimalInfeasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 6
+  nnz(P)        = 3
+  nnz(A)        = 8
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 6
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +1.2503e-01  +7.5480e+00  7.42e+00  7.83e-01  8.01e-17  1.00e+00  3.97e+00   ------   
+  1  +1.1897e+02  +2.1160e+02  7.79e-01  9.04e-01  1.44e-16  1.64e+02  8.73e-01  8.05e-01  
+  2  +1.1856e+01  +5.3261e+03  4.48e+02  9.15e-01  5.46e-17  5.45e+03  1.87e-02  9.90e-01  
+  3  +1.1302e+01  +5.1961e+05  4.60e+04  9.15e-01  1.38e-16  5.20e+05  1.88e-04  9.90e-01  
+  4  +1.1302e+01  +5.1964e+07  4.60e+06  9.15e-01  1.12e-16  5.20e+07  1.88e-06  9.90e-01  
+  5  +1.1301e+01  +5.1955e+09  4.60e+08  9.15e-01  1.23e-16  5.20e+09  1.88e-08  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = PrimalInfeasible
+solve time = 539.556µs
+[       OK ] BasicQPTest.PrimalInfeasible (0 ms)
+[----------] 3 tests from BasicQPTest (2 ms total)
+
+[----------] 2 tests from BasicQPDualInfeasibleTest
+[ RUN      ] BasicQPDualInfeasibleTest.DualInfeasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 2
+  nnz(P)        = 3
+  nnz(A)        = 3
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 2
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -2.5000e+00  -4.5000e+00  8.00e-01  2.21e-01  1.05e+00  1.00e+00  2.33e+00   ------   
+  1  +9.9417e+02  -1.3548e+03  2.36e+00  1.16e-01  5.87e-01  1.55e+02  5.98e-01  7.85e-01  
+  2  +9.4657e+01  -3.0434e+02  4.22e+00  7.35e-03  5.23e-02  3.54e+02  8.07e-02  9.90e-01  
+  3  -1.0831e+03  -9.3717e+02  1.56e-01  4.04e-04  3.20e-03  9.21e+02  1.35e-02  9.32e-01  
+  4  +1.1410e+06  -1.3694e+06  2.20e+00  1.10e-05  8.82e-05  8.96e+04  1.64e-03  9.90e-01  
+  5  +1.8559e+05  -7.5013e+05  5.04e+00  1.43e-06  1.16e-05  8.89e+04  3.69e-04  7.99e-01  
+  6  +1.5044e+09  -1.6326e+09  2.09e+00  1.93e-07  1.56e-06  2.11e+07  1.66e-04  9.18e-01  
+  7  +3.0492e+08  -4.9259e+08  2.62e+00  5.93e-09  4.80e-08  8.18e+06  1.28e-05  9.68e-01  
+  8  -5.4440e+08  -7.2422e+08  3.30e-01  2.66e-10  3.56e-09  1.09e+08  3.37e-06  9.90e-01  
+  9  +1.1034e+12  -1.2297e+12  2.11e+00  1.59e-11  1.97e-10  1.01e+10  4.57e-07  9.41e-01  
+ 10  +1.8191e+11  -3.6212e+11  2.99e+00  1.58e-13  1.26e-11  3.73e+09  4.75e-08  9.90e-01  
+ 11  -1.5112e+11  -2.0438e+11  3.52e-01  1.52e-15  5.64e-12  2.34e+09  6.70e-09  9.90e-01  
+ 12  +3.6829e+14  -4.0384e+14  2.10e+00  2.36e-16  5.80e-14  2.33e+11  1.31e-09  8.89e-01  
+ 13  +6.6629e+13  -1.1676e+14  2.75e+00  4.15e-15  4.02e-14  8.53e+10  1.91e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = DualInfeasible
+solve time = 803.864µs
+[       OK ] BasicQPDualInfeasibleTest.DualInfeasible (1 ms)
+[ RUN      ] BasicQPDualInfeasibleTest.DualInfeasibleIllConditioned
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 1
+  nnz(P)        = 3
+  nnz(A)        = 2
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 1
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -4.0000e+08  -1.1250e+00  3.56e+08  1.77e-09  9.01e-09  1.00e+00  1.00e+00   ------   
+  1  -1.3600e+10  -6.1163e+02  2.22e+07  1.77e-09  7.50e-09  2.08e+02  2.21e-01  7.54e-01  
+  2  -1.3215e+12  -3.3922e+06  3.90e+05  1.77e-09  7.50e-09  8.17e+06  2.02e-01  3.35e-01  
+  3  -5.1435e+08  -9.5747e-02  5.14e+08  3.93e-10  4.23e-09  4.00e+08  2.67e+08  5.50e-02  
+  4  +1.3585e+16  -1.3585e+16  2.00e+00  9.30e-11  3.96e-10  5.72e+10  1.81e+12  7.27e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = DualInfeasible
+solve time = 278.337µs
+[       OK ] BasicQPDualInfeasibleTest.DualInfeasibleIllConditioned (0 ms)
+[----------] 2 tests from BasicQPDualInfeasibleTest (1 ms total)
+
+[----------] 3 tests from BasicEqConstrainedTest
+[ RUN      ] BasicEqConstrainedTest.Feasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 2
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    :        Zero = 1,  numel = 2
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +1.0000e+00  +1.0000e+00  0.00e+00  6.50e-17  9.20e-17  1.00e+00  1.00e+00   ------   
+  0  +1.0000e+00  +1.0000e+00  0.00e+00  6.50e-17  9.20e-17  1.00e+00  1.00e+00   ------   
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 130.659µs
+[       OK ] BasicEqConstrainedTest.Feasible (0 ms)
+[ RUN      ] BasicEqConstrainedTest.PrimalInfeasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 10
+  cones (total) = 1
+    :        Zero = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +3.8333e-01  +1.3607e+08  1.36e+08  5.07e-01  2.10e-16  1.00e+00  1.00e+00   ------   
+  1  +3.8333e-01  +6.8716e+09  6.87e+09  5.07e-01  2.73e-16  2.06e+02  2.06e-02  5.66e-01  
+  2  +3.8332e-01  +6.7383e+11  6.74e+11  5.07e-01  3.73e-16  1.77e+07  1.77e-01  3.37e-01  
+  3  +3.8333e-01  +1.3638e+08  1.36e+08  5.07e-01  1.43e-16  1.36e+08  6.54e+12  9.90e-01  
+  4  +3.8333e-01  +5.4903e+08  5.49e+08  5.07e-01  3.59e-17  5.49e+08  7.08e+11  9.90e-01  
+  5  +3.8333e-01  +4.5706e+09  4.57e+09  5.07e-01  1.27e-16  4.57e+09  6.92e+10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = PrimalInfeasible
+solve time = 468.279µs
+[       OK ] BasicEqConstrainedTest.PrimalInfeasible (0 ms)
+[ RUN      ] BasicEqConstrainedTest.DualInfeasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 2
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    :        Zero = 1,  numel = 2
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.0000e+08  +3.0000e+00  3.33e+07  2.00e-16  1.00e-08  1.00e+00  1.00e+00   ------   
+  1  -5.0500e+09  +3.0000e+00  1.68e+09  1.92e-16  1.98e-10  2.06e+02  2.06e-02  5.66e-01  
+  2  -4.9529e+11  +2.9999e+00  1.65e+11  1.96e-16  2.02e-12  1.81e+07  1.81e-01  3.37e-01  
+  3  -1.0019e+08  +3.0000e+00  3.34e+07  1.99e-16  9.98e-09  1.00e+08  7.13e+12  9.90e-01  
+  4  -1.0014e+10  +3.0000e+00  3.34e+09  1.96e-16  9.99e-11  1.00e+10  7.14e+10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = DualInfeasible
+solve time = 330.959µs
+[       OK ] BasicEqConstrainedTest.DualInfeasible (0 ms)
+[----------] 3 tests from BasicEqConstrainedTest (1 ms total)
+
+[----------] 1 test from BasicPowerConeTest
+[ RUN      ] BasicPowerConeTest.Feasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 6
+  constraints   = 8
+  nnz(P)        = 0
+  nnz(A)        = 10
+  cones (total) = 3
+    :        Zero = 1,  numel = 2
+    :       Power = 2,  numel = (3,3)
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +0.0000e+00  -0.0000e+00  0.00e+00  7.43e-01  8.26e-01  1.00e+00  1.00e+00   ------   
+  1  -7.2016e-01  -7.0464e-01  1.55e-02  1.63e-01  2.05e-01  2.71e-01  2.63e-01  7.92e-01  
+  2  -1.8150e+00  -1.7812e+00  1.90e-02  2.01e-02  2.34e-02  7.57e-02  3.29e-02  9.90e-01  
+  3  -1.8389e+00  -1.8319e+00  3.82e-03  4.32e-03  4.98e-03  1.59e-02  7.06e-03  7.92e-01  
+  4  -1.8436e+00  -1.8421e+00  7.92e-04  9.26e-04  1.07e-03  3.37e-03  1.51e-03  7.92e-01  
+  5  -1.8449e+00  -1.8446e+00  1.66e-04  1.99e-04  2.29e-04  7.16e-04  3.24e-04  7.92e-01  
+  6  -1.8452e+00  -1.8452e+00  3.47e-05  4.26e-05  4.90e-05  1.52e-04  6.95e-05  7.92e-01  
+  7  -1.8453e+00  -1.8453e+00  7.30e-06  9.13e-06  1.05e-05  3.23e-05  1.49e-05  7.92e-01  
+  8  -1.8453e+00  -1.8453e+00  1.53e-06  1.96e-06  2.25e-06  6.87e-06  3.19e-06  7.92e-01  
+  9  -1.8454e+00  -1.8454e+00  3.23e-07  4.20e-07  4.82e-07  1.46e-06  6.85e-07  7.92e-01  
+ 10  -1.8454e+00  -1.8454e+00  6.79e-08  8.99e-08  1.03e-07  3.11e-07  1.47e-07  7.92e-01  
+ 11  -1.8454e+00  -1.8454e+00  1.43e-08  1.93e-08  2.22e-08  6.61e-08  3.15e-08  7.92e-01  
+ 12  -1.8454e+00  -1.8454e+00  3.01e-09  4.13e-09  4.75e-09  1.41e-08  6.74e-09  7.92e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 1.548211ms
+[       OK ] BasicPowerConeTest.Feasible (1 ms)
+[----------] 1 test from BasicPowerConeTest (1 ms total)
+
+[----------] 1 test from BasicGenPowerConeTest
+[ RUN      ] BasicGenPowerConeTest.Feasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 6
+  constraints   = 8
+  nnz(P)        = 0
+  nnz(A)        = 10
+  cones (total) = 3
+    :        Zero = 1,  numel = 2
+    :    GenPower = 2,  numel = (3,3)
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +0.0000e+00  -0.0000e+00  0.00e+00  7.43e-01  8.26e-01  1.00e+00  1.00e+00   ------   
+  1  -4.1106e-01  -4.3422e-01  2.32e-02  2.59e-01  3.30e-01  3.64e-01  4.12e-01  6.34e-01  
+  2  -1.0943e+00  -1.0992e+00  4.50e-03  9.71e-02  1.17e-01  1.58e-01  1.69e-01  6.34e-01  
+  3  -1.7009e+00  -1.6983e+00  1.55e-03  1.94e-02  2.26e-02  4.17e-02  3.83e-02  7.92e-01  
+  4  -1.8032e+00  -1.8021e+00  5.93e-04  4.36e-03  5.03e-03  1.00e-02  7.83e-03  7.92e-01  
+  5  -1.8344e+00  -1.8341e+00  1.67e-04  9.67e-04  1.11e-03  2.30e-03  1.62e-03  7.92e-01  
+  6  -1.8438e+00  -1.8437e+00  2.64e-05  1.94e-04  2.23e-04  4.49e-04  3.70e-04  7.86e-01  
+  7  -1.8447e+00  -1.8446e+00  1.27e-05  7.91e-05  9.10e-05  1.87e-04  1.42e-04  6.34e-01  
+  8  -1.8452e+00  -1.8452e+00  2.61e-06  1.68e-05  1.93e-05  3.95e-05  3.13e-05  7.92e-01  
+  9  -1.8453e+00  -1.8453e+00  1.27e-06  6.91e-06  7.95e-06  1.66e-05  1.19e-05  6.34e-01  
+ 10  -1.8453e+00  -1.8453e+00  2.57e-07  1.46e-06  1.68e-06  3.49e-06  2.63e-06  7.92e-01  
+ 11  -1.8453e+00  -1.8453e+00  1.23e-07  6.04e-07  6.94e-07  1.47e-06  1.00e-06  6.34e-01  
+ 12  -1.8454e+00  -1.8454e+00  2.49e-08  1.28e-07  1.47e-07  3.10e-07  2.21e-07  7.92e-01  
+ 13  -1.8454e+00  -1.8454e+00  1.17e-08  5.27e-08  6.06e-08  1.30e-07  8.41e-08  6.34e-01  
+ 14  -1.8454e+00  -1.8454e+00  2.36e-09  1.12e-08  1.28e-08  2.74e-08  1.86e-08  7.92e-01  
+ 15  -1.8454e+00  -1.8454e+00  1.09e-09  4.65e-09  5.29e-09  1.15e-08  7.07e-09  6.34e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 2.427084ms
+[       OK ] BasicGenPowerConeTest.Feasible (2 ms)
+[----------] 1 test from BasicGenPowerConeTest (2 ms total)
+
+[----------] 3 tests from BasicExpConeTest
+[ RUN      ] BasicExpConeTest.Feasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 5
+  nnz(P)        = 0
+  nnz(A)        = 5
+  cones (total) = 2
+    :        Zero = 1,  numel = 2
+    : Exponential = 1,  numel = 3
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +0.0000e+00  -0.0000e+00  0.00e+00  9.89e-01  5.04e-01  1.00e+00  1.00e+00   ------   
+  1  +3.3353e+00  +6.8900e+00  1.07e+00  9.14e-01  8.95e-02  4.53e+00  2.14e-01  7.92e-01  
+  2  +1.5946e+01  +3.3184e+01  1.08e+00  6.60e-01  1.78e-02  1.81e+01  4.59e-02  7.92e-01  
+  3  +2.4261e+01  +5.1084e+01  1.11e+00  2.30e-01  5.04e-03  2.73e+01  1.13e-02  7.92e-01  
+  4  +7.1045e+00  +1.3831e+01  9.47e-01  5.63e-02  1.50e-03  6.88e+00  3.38e-03  7.92e-01  
+  5  -1.9077e+00  -4.4928e-01  1.46e+00  1.14e-02  3.05e-04  1.49e+00  7.24e-04  7.92e-01  
+  6  -4.2883e+00  -3.9751e+00  7.88e-02  2.42e-03  6.44e-05  3.20e-01  1.55e-04  7.92e-01  
+  7  -4.9906e+00  -4.9850e+00  1.14e-03  4.32e-05  1.15e-06  5.80e-03  2.78e-06  9.90e-01  
+  8  -4.9998e+00  -4.9997e+00  2.07e-05  7.74e-07  2.06e-08  1.06e-04  4.98e-08  9.90e-01  
+  9  -5.0000e+00  -4.9999e+00  4.43e-06  1.66e-07  4.42e-09  2.27e-05  1.07e-08  7.92e-01  
+ 10  -5.0000e+00  -5.0000e+00  8.03e-08  2.97e-09  7.91e-11  4.10e-07  1.91e-10  9.90e-01  
+ 11  -5.0000e+00  -5.0000e+00  1.45e-09  5.33e-11  1.42e-12  7.39e-09  3.43e-12  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 888.093µs
+[       OK ] BasicExpConeTest.Feasible (1 ms)
+[ RUN      ] BasicExpConeTest.PrimalInfeasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 5
+  nnz(P)        = 0
+  nnz(A)        = 5
+  cones (total) = 2
+    :        Zero = 1,  numel = 2
+    : Exponential = 1,  numel = 3
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +0.0000e+00  -0.0000e+00  0.00e+00  8.18e-01  5.04e-01  1.00e+00  1.00e+00   ------   
+  1  +2.4937e+00  +3.8431e+00  5.41e-01  1.92e-01  8.90e-02  1.93e+00  2.14e-01  7.92e-01  
+  2  +3.0866e+01  +5.9295e+01  9.21e-01  1.99e-02  4.85e-03  2.90e+01  1.20e-02  9.90e-01  
+  3  +1.7212e+03  +3.4695e+03  1.02e+00  4.00e-04  8.64e-05  1.75e+03  2.16e-04  9.90e-01  
+  4  +1.0327e+05  +2.1150e+05  1.05e+00  7.45e-06  1.57e-06  1.08e+05  3.91e-06  9.90e-01  
+  5  +5.3867e+05  +1.0161e+06  8.86e-01  1.37e-06  3.35e-07  4.77e+05  8.39e-07  7.92e-01  
+  6  +2.3969e+06  +4.7487e+06  9.81e-01  3.25e-07  7.38e-08  2.35e+06  1.84e-07  7.88e-01  
+  7  +1.1527e+07  +2.1959e+07  9.05e-01  6.52e-08  1.58e-08  1.04e+07  3.94e-08  7.92e-01  
+  8  +5.2329e+07  +1.0323e+08  9.73e-01  1.48e-08  3.41e-09  5.09e+07  8.50e-09  7.92e-01  
+  9  +2.4560e+08  +4.7100e+08  9.18e-01  3.06e-09  7.27e-10  2.25e+08  1.82e-09  7.92e-01  
+ 10  +1.1447e+09  +2.2527e+09  9.68e-01  6.84e-10  1.59e-10  1.11e+09  3.95e-10  7.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = PrimalInfeasible
+solve time = 1.053014ms
+[       OK ] BasicExpConeTest.PrimalInfeasible (1 ms)
+[ RUN      ] BasicExpConeTest.DualInfeasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 3
+  nnz(P)        = 0
+  nnz(A)        = 3
+  cones (total) = 1
+    : Exponential = 1,  numel = 3
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +0.0000e+00  -0.0000e+00  0.00e+00  1.00e+00  5.04e-01  1.00e+00  1.00e+00   ------   
+  1  -2.0419e-01  -0.0000e+00  2.04e-01  1.33e-01  1.10e-01  5.21e-01  2.45e-01  7.92e-01  
+  2  -4.6250e+01  -0.0000e+00  4.63e+01  1.01e-02  1.58e-02  5.06e+01  3.39e-02  9.75e-01  
+  3  -4.4762e+02  -0.0000e+00  4.48e+02  1.78e-04  2.83e-04  4.48e+02  6.08e-04  9.90e-01  
+  4  -1.6950e+04  -0.0000e+00  1.69e+04  3.19e-06  5.07e-06  1.70e+04  1.09e-05  9.90e-01  
+  5  -8.0142e+05  -0.0000e+00  8.01e+05  5.71e-08  9.09e-08  8.01e+05  1.95e-07  9.90e-01  
+  6  -4.1210e+07  -0.0000e+00  4.12e+07  1.02e-09  1.63e-09  4.12e+07  3.50e-09  9.90e-01  
+  7  -4.1210e+09  -0.0000e+00  4.12e+09  1.02e-11  1.63e-11  4.12e+09  3.50e-11  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = DualInfeasible
+solve time = 677.647µs
+[       OK ] BasicExpConeTest.DualInfeasible (0 ms)
+[----------] 3 tests from BasicExpConeTest (3 ms total)
+
+[----------] 2 tests from BasicSOCPTest
+[ RUN      ] BasicSOCPTest.Feasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 9
+  nnz(P)        = 6
+  nnz(A)        = 9
+  cones (total) = 2
+    : Nonnegative = 1,  numel = 6
+    : SecondOrder = 1,  numel = 3
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -3.7996e-01  -7.5303e+00  7.15e+00  5.42e-01  5.47e-01  1.00e+00  2.25e+00   ------   
+  1  -5.2450e-01  -1.1151e+00  5.91e-01  7.97e-02  8.09e-02  1.11e-01  3.88e-01  9.53e-01  
+  2  -8.2395e-01  -9.6864e-01  1.45e-01  5.07e-03  5.79e-03  2.04e-02  5.87e-02  9.90e-01  
+  3  -8.4516e-01  -8.5575e-01  1.06e-02  3.36e-04  3.49e-04  1.55e-03  4.20e-03  9.43e-01  
+  4  -8.4574e-01  -8.4719e-01  1.46e-03  4.46e-05  4.55e-05  2.07e-04  5.70e-04  8.75e-01  
+  5  -8.4589e-01  -8.4601e-01  1.22e-04  2.81e-06  2.85e-06  1.36e-05  4.40e-05  9.90e-01  
+  6  -8.4590e-01  -8.4590e-01  2.62e-06  5.62e-08  5.71e-08  2.79e-07  9.35e-07  9.80e-01  
+  7  -8.4590e-01  -8.4590e-01  6.48e-08  6.56e-10  6.66e-10  4.64e-09  2.11e-08  9.90e-01  
+  8  -8.4590e-01  -8.4590e-01  1.75e-09  2.16e-11  6.85e-12  7.49e-11  5.02e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 1.004325ms
+[       OK ] BasicSOCPTest.Feasible (1 ms)
+[ RUN      ] BasicSOCPTest.PrimalFeasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 9
+  nnz(P)        = 6
+  nnz(A)        = 9
+  cones (total) = 2
+    : Nonnegative = 1,  numel = 6
+    : SecondOrder = 1,  numel = 3
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +3.5499e+00  +2.7772e+02  7.72e+01  7.28e-01  2.94e-01  1.00e+00  4.73e+01   ------   
+  1  +8.5243e+03  -1.9938e+03  5.28e+00  8.90e-01  1.76e-01  2.60e+02  1.21e+01  7.66e-01  
+  2  +2.2194e+06  -1.6580e+06  2.34e+00  9.07e-01  3.29e-02  1.55e+05  2.06e+00  8.40e-01  
+  3  +6.4996e+07  -1.0284e+07  7.32e+00  9.09e-01  1.83e-03  2.43e+07  1.13e-01  9.46e-01  
+  4  +2.1008e+03  +4.1147e+07  1.96e+04  9.33e-01  2.10e-05  1.24e+08  1.32e-03  9.90e-01  
+  5  -9.0132e-01  +7.8046e+07  7.80e+07  8.10e-01  7.99e-07  6.30e+07  5.10e-05  9.61e-01  
+  6  +2.5440e-01  +7.6508e+09  7.65e+09  8.01e-01  8.41e-09  5.56e+09  5.45e-07  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = PrimalInfeasible
+solve time = 883.354µs
+[       OK ] BasicSOCPTest.PrimalFeasible (1 ms)
+[----------] 2 tests from BasicSOCPTest (2 ms total)
+
+[----------] 2 tests from BasicUnconstrainedTest
+[ RUN      ] BasicUnconstrainedTest.Feasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 0
+  nnz(P)        = 3
+  nnz(A)        = 0
+  cones (total) = 0
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -7.0000e+00  -7.0000e+00  2.54e-16  0.00e+00  5.52e-17  1.00e+00  1.00e+00   ------   
+  0  -7.0000e+00  -7.0000e+00  2.54e-16  0.00e+00  5.52e-17  1.00e+00  1.00e+00   ------   
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 101.469µs
+[       OK ] BasicUnconstrainedTest.Feasible (0 ms)
+[ RUN      ] BasicUnconstrainedTest.Infeasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 0
+  nnz(P)        = 0
+  nnz(A)        = 0
+  cones (total) = 0
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +0.0000e+00  -0.0000e+00  0.00e+00  0.00e+00  1.00e+00  1.00e+00  1.00e+00   ------   
+  1  -9.9000e+01  -0.0000e+00  9.90e+01  0.00e+00  1.00e-02  1.00e+02  1.00e-02  9.90e-01  
+  2  -9.9990e+03  -0.0000e+00  1.00e+04  0.00e+00  1.00e-04  1.00e+04  1.00e-04  9.90e-01  
+  3  -1.0000e+06  -0.0000e+00  1.00e+06  0.00e+00  1.00e-06  1.00e+06  1.00e-06  9.90e-01  
+  4  -1.0000e+08  -0.0000e+00  1.00e+08  0.00e+00  1.00e-08  1.00e+08  1.00e-08  9.90e-01  
+  5  -1.0000e+10  -0.0000e+00  1.00e+10  0.00e+00  1.00e-10  1.00e+10  1.00e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = DualInfeasible
+solve time = 277.428µs
+[       OK ] BasicUnconstrainedTest.Infeasible (0 ms)
+[----------] 2 tests from BasicUnconstrainedTest (0 ms total)
+
+[----------] 1 test from MixedConicTest
+[ RUN      ] MixedConicTest.Feasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 3
+  constraints   = 15
+  nnz(P)        = 3
+  nnz(A)        = 15
+  cones (total) = 5
+    :        Zero = 1,  numel = 3
+    : Nonnegative = 1,  numel = 3
+    : SecondOrder = 1,  numel = 3
+    : Exponential = 1,  numel = 3
+    :       Power = 1,  numel = 3
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +0.0000e+00  -0.0000e+00  0.00e+00  1.00e+00  1.42e+00  1.00e+00  1.00e+00   ------   
+  1  -6.2378e-15  -6.9641e-30  6.24e-15  3.16e-02  7.73e-03  1.00e-02  1.00e-02  9.90e-01  
+  2  -5.2991e-15  -5.1248e-30  5.30e-15  3.16e-04  7.68e-05  1.00e-04  1.00e-04  9.90e-01  
+  3  -5.2719e-15  -5.0737e-30  5.27e-15  3.16e-06  7.67e-07  1.00e-06  1.00e-06  9.90e-01  
+  4  -9.1043e-14  -1.3862e-27  9.10e-14  5.67e-08  1.38e-08  1.79e-08  1.79e-08  9.90e-01  
+  5  -1.2588e-15  -2.6536e-31  1.26e-15  5.67e-10  1.38e-10  1.79e-10  1.79e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 1.018323ms
+[       OK ] MixedConicTest.Feasible (1 ms)
+[----------] 1 test from MixedConicTest (1 ms total)
+
+[----------] 18 tests from DataUpdatingTest
+[ RUN      ] DataUpdatingTest.update_P_csc
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 462.638µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.4159e-01  -8.6088e+00  8.47e+00  1.05e-16  1.62e-16  1.00e+00  1.89e+00   ------   
+  1  -2.1810e-01  -7.4451e-01  5.26e-01  6.62e-17  1.92e-16  5.93e-02  1.17e-01  9.43e-01  
+  2  -2.5060e-01  -3.0138e-01  5.08e-02  1.20e-16  7.98e-17  5.05e-03  9.67e-03  9.90e-01  
+  3  -2.5126e-01  -2.5289e-01  1.63e-03  1.31e-16  1.08e-16  1.60e-04  2.98e-04  9.90e-01  
+  4  -2.5126e-01  -2.5127e-01  1.77e-05  7.54e-17  1.44e-16  1.74e-06  3.23e-06  9.90e-01  
+  5  -2.5126e-01  -2.5126e-01  1.77e-07  2.70e-14  1.26e-13  1.74e-08  3.23e-08  9.90e-01  
+  6  -2.5126e-01  -2.5126e-01  1.77e-09  6.44e-16  2.41e-15  1.74e-10  3.23e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 458.297µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.4062e-01  -4.7542e+01  4.74e+01  7.48e-17  8.75e-17  1.00e+00  9.68e+00   ------   
+  1  -1.6746e-01  -1.4363e+00  1.27e+00  1.93e-15  1.47e-15  2.68e-02  2.59e-01  9.73e-01  
+  2  -2.4806e-01  -3.7123e-01  1.23e-01  1.01e-16  3.62e-17  2.60e-03  2.24e-02  9.90e-01  
+  3  -2.5124e-01  -2.5804e-01  6.80e-03  1.53e-16  1.16e-16  1.38e-04  1.14e-03  9.90e-01  
+  4  -2.5126e-01  -2.5135e-01  9.25e-05  8.73e-17  4.69e-17  1.88e-06  1.54e-05  9.90e-01  
+  5  -2.5126e-01  -2.5126e-01  9.30e-07  1.44e-13  7.21e-13  1.89e-08  1.54e-07  9.90e-01  
+  6  -2.5126e-01  -2.5126e-01  9.30e-09  2.89e-15  1.46e-14  1.89e-10  1.54e-09  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 451.166µs
+[       OK ] DataUpdatingTest.update_P_csc (1 ms)
+[ RUN      ] DataUpdatingTest.update_P_vector_form
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 451.627µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.4159e-01  -8.6088e+00  8.47e+00  1.05e-16  1.62e-16  1.00e+00  1.89e+00   ------   
+  1  -2.1810e-01  -7.4451e-01  5.26e-01  6.62e-17  1.92e-16  5.93e-02  1.17e-01  9.43e-01  
+  2  -2.5060e-01  -3.0138e-01  5.08e-02  1.20e-16  7.98e-17  5.05e-03  9.67e-03  9.90e-01  
+  3  -2.5126e-01  -2.5289e-01  1.63e-03  1.31e-16  1.08e-16  1.60e-04  2.98e-04  9.90e-01  
+  4  -2.5126e-01  -2.5127e-01  1.77e-05  7.54e-17  1.44e-16  1.74e-06  3.23e-06  9.90e-01  
+  5  -2.5126e-01  -2.5126e-01  1.77e-07  2.70e-14  1.26e-13  1.74e-08  3.23e-08  9.90e-01  
+  6  -2.5126e-01  -2.5126e-01  1.77e-09  6.44e-16  2.41e-15  1.74e-10  3.23e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 442.127µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.4062e-01  -4.7542e+01  4.74e+01  7.48e-17  8.75e-17  1.00e+00  9.68e+00   ------   
+  1  -1.6746e-01  -1.4363e+00  1.27e+00  1.93e-15  1.47e-15  2.68e-02  2.59e-01  9.73e-01  
+  2  -2.4806e-01  -3.7123e-01  1.23e-01  1.01e-16  3.62e-17  2.60e-03  2.24e-02  9.90e-01  
+  3  -2.5124e-01  -2.5804e-01  6.80e-03  1.53e-16  1.16e-16  1.38e-04  1.14e-03  9.90e-01  
+  4  -2.5126e-01  -2.5135e-01  9.25e-05  8.73e-17  4.69e-17  1.88e-06  1.54e-05  9.90e-01  
+  5  -2.5126e-01  -2.5126e-01  9.30e-07  1.44e-13  7.21e-13  1.89e-08  1.54e-07  9.90e-01  
+  6  -2.5126e-01  -2.5126e-01  9.30e-09  2.89e-15  1.46e-14  1.89e-10  1.54e-09  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 446.136µs
+[       OK ] DataUpdatingTest.update_P_vector_form (1 ms)
+[ RUN      ] DataUpdatingTest.update_P_vector_form_eigen
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 457.207µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.4159e-01  -8.6088e+00  8.47e+00  1.05e-16  1.62e-16  1.00e+00  1.89e+00   ------   
+  1  -2.1810e-01  -7.4451e-01  5.26e-01  6.62e-17  1.92e-16  5.93e-02  1.17e-01  9.43e-01  
+  2  -2.5060e-01  -3.0138e-01  5.08e-02  1.20e-16  7.98e-17  5.05e-03  9.67e-03  9.90e-01  
+  3  -2.5126e-01  -2.5289e-01  1.63e-03  1.31e-16  1.08e-16  1.60e-04  2.98e-04  9.90e-01  
+  4  -2.5126e-01  -2.5127e-01  1.77e-05  7.54e-17  1.44e-16  1.74e-06  3.23e-06  9.90e-01  
+  5  -2.5126e-01  -2.5126e-01  1.77e-07  2.70e-14  1.26e-13  1.74e-08  3.23e-08  9.90e-01  
+  6  -2.5126e-01  -2.5126e-01  1.77e-09  6.44e-16  2.41e-15  1.74e-10  3.23e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 266.967µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.4062e-01  -4.7542e+01  4.74e+01  7.48e-17  8.75e-17  1.00e+00  9.68e+00   ------   
+  1  -1.6746e-01  -1.4363e+00  1.27e+00  1.93e-15  1.47e-15  2.68e-02  2.59e-01  9.73e-01  
+  2  -2.4806e-01  -3.7123e-01  1.23e-01  1.01e-16  3.62e-17  2.60e-03  2.24e-02  9.90e-01  
+  3  -2.5124e-01  -2.5804e-01  6.80e-03  1.53e-16  1.16e-16  1.38e-04  1.14e-03  9.90e-01  
+  4  -2.5126e-01  -2.5135e-01  9.25e-05  8.73e-17  4.69e-17  1.88e-06  1.54e-05  9.90e-01  
+  5  -2.5126e-01  -2.5126e-01  9.30e-07  1.44e-13  7.21e-13  1.89e-08  1.54e-07  9.90e-01  
+  6  -2.5126e-01  -2.5126e-01  9.30e-09  2.89e-15  1.46e-14  1.89e-10  1.54e-09  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 223.798µs
+[       OK ] DataUpdatingTest.update_P_vector_form_eigen (1 ms)
+[ RUN      ] DataUpdatingTest.update_P_partial
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 225.528µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.0704e-01  -9.3436e+00  9.24e+00  5.04e-17  8.15e-17  1.00e+00  2.05e+00   ------   
+  1  -1.3345e-01  -4.3967e-01  3.06e-01  1.21e-16  7.59e-16  3.15e-02  6.73e-02  9.70e-01  
+  2  -1.3636e-01  -1.4446e-01  8.10e-03  1.21e-16  1.34e-16  7.78e-04  1.72e-03  9.90e-01  
+  3  -1.3636e-01  -1.3645e-01  8.73e-05  1.26e-16  3.09e-17  8.38e-06  1.85e-05  9.90e-01  
+  4  -1.3636e-01  -1.3636e-01  8.74e-07  5.91e-14  6.53e-13  8.39e-08  1.85e-07  9.90e-01  
+  5  -1.3636e-01  -1.3636e-01  8.74e-09  1.17e-15  1.31e-14  8.39e-10  1.85e-09  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 193.309µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -9.5058e-02  -1.0423e+01  1.03e+01  6.43e-17  9.17e-17  1.00e+00  2.27e+00   ------   
+  1  -1.3353e-01  -4.6652e-01  3.33e-01  1.11e-16  5.00e-16  3.00e-02  7.23e-02  9.72e-01  
+  2  -1.3636e-01  -1.4465e-01  8.29e-03  9.40e-17  1.04e-16  7.13e-04  1.74e-03  9.90e-01  
+  3  -1.3636e-01  -1.3645e-01  8.83e-05  1.13e-16  1.15e-16  7.60e-06  1.86e-05  9.90e-01  
+  4  -1.3636e-01  -1.3636e-01  8.83e-07  4.49e-14  6.19e-13  7.60e-08  1.86e-07  9.90e-01  
+  5  -1.3636e-01  -1.3636e-01  8.83e-09  9.20e-16  1.24e-14  7.60e-10  1.86e-09  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 196.158µs
+[       OK ] DataUpdatingTest.update_P_partial (0 ms)
+[ RUN      ] DataUpdatingTest.update_P_partial_eigen
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 225.128µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.0704e-01  -9.3436e+00  9.24e+00  5.04e-17  8.15e-17  1.00e+00  2.05e+00   ------   
+  1  -1.3345e-01  -4.3967e-01  3.06e-01  1.21e-16  7.59e-16  3.15e-02  6.73e-02  9.70e-01  
+  2  -1.3636e-01  -1.4446e-01  8.10e-03  1.21e-16  1.34e-16  7.78e-04  1.72e-03  9.90e-01  
+  3  -1.3636e-01  -1.3645e-01  8.73e-05  1.26e-16  3.09e-17  8.38e-06  1.85e-05  9.90e-01  
+  4  -1.3636e-01  -1.3636e-01  8.74e-07  5.91e-14  6.53e-13  8.39e-08  1.85e-07  9.90e-01  
+  5  -1.3636e-01  -1.3636e-01  8.74e-09  1.17e-15  1.31e-14  8.39e-10  1.85e-09  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 193.079µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -9.5058e-02  -1.0423e+01  1.03e+01  6.43e-17  9.17e-17  1.00e+00  2.27e+00   ------   
+  1  -1.3353e-01  -4.6652e-01  3.33e-01  1.11e-16  5.00e-16  3.00e-02  7.23e-02  9.72e-01  
+  2  -1.3636e-01  -1.4465e-01  8.29e-03  9.40e-17  1.04e-16  7.13e-04  1.74e-03  9.90e-01  
+  3  -1.3636e-01  -1.3645e-01  8.83e-05  1.13e-16  1.15e-16  7.60e-06  1.86e-05  9.90e-01  
+  4  -1.3636e-01  -1.3636e-01  8.83e-07  4.49e-14  6.19e-13  7.60e-08  1.86e-07  9.90e-01  
+  5  -1.3636e-01  -1.3636e-01  8.83e-09  9.20e-16  1.24e-14  7.60e-10  1.86e-09  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 196.258µs
+[       OK ] DataUpdatingTest.update_P_partial_eigen (0 ms)
+[ RUN      ] DataUpdatingTest.update_A_csc
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 226.238µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -7.8014e-02  -1.1579e+01  1.15e+01  3.12e-01  6.18e+01  1.00e+00  3.05e+00   ------   
+  1  -1.2215e-01  -7.6540e-01  6.43e-01  2.17e-02  1.52e+01  8.42e-02  2.61e-01  9.50e-01  
+  2  -1.2911e-01  -1.4686e-01  1.78e-02  2.16e-04  1.92e-01  2.53e-03  8.27e-03  9.90e-01  
+  3  -1.3222e-01  -1.3257e-01  3.41e-04  3.47e-06  3.03e-03  2.56e-05  1.60e-04  9.84e-01  
+  4  -1.3241e-01  -1.3241e-01  3.51e-06  3.46e-08  3.03e-05  2.64e-07  1.66e-06  9.90e-01  
+  5  -1.3241e-01  -1.3241e-01  3.51e-08  3.46e-10  3.03e-07  2.64e-09  1.66e-08  9.90e-01  
+  6  -1.3241e-01  -1.3241e-01  3.51e-10  3.46e-12  3.03e-09  2.64e-11  1.66e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 221.479µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +5.1578e-01  -7.5881e+00  8.10e+00  7.52e-17  1.25e-02  1.00e+00  6.70e+00   ------   
+  1  +1.9510e-01  -8.5400e-01  1.05e+00  2.70e-16  4.24e-03  1.43e-01  8.59e-01  8.91e-01  
+  2  -7.2561e-02  -2.1438e-01  1.42e-01  4.30e-16  1.47e-04  2.69e-02  9.73e-02  9.90e-01  
+  3  -1.2767e-01  -1.3725e-01  9.58e-03  2.26e-16  1.67e-06  1.71e-03  5.93e-03  9.90e-01  
+  4  -1.3233e-01  -1.3249e-01  1.64e-04  6.92e-17  1.68e-08  2.93e-05  1.00e-04  9.90e-01  
+  5  -1.3241e-01  -1.3241e-01  1.66e-06  1.48e-16  1.68e-10  2.96e-07  1.01e-06  9.90e-01  
+  6  -1.3241e-01  -1.3241e-01  1.66e-08  2.83e-14  1.46e-12  2.97e-09  1.01e-08  9.90e-01  
+  7  -1.3241e-01  -1.3241e-01  1.66e-10  4.96e-16  1.24e-14  2.97e-11  1.01e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 250.589µs
+[       OK ] DataUpdatingTest.update_A_csc (0 ms)
+[ RUN      ] DataUpdatingTest.update_A_vector_form
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 226.388µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.3971e-01  -1.2495e+01  1.24e+01  3.01e-01  7.26e+02  1.00e+00  2.91e+00   ------   
+  1  -2.1206e-01  -9.3469e-01  7.23e-01  2.22e-02  1.88e+02  8.67e-02  2.67e-01  9.48e-01  
+  2  -2.4923e-01  -3.0141e-01  5.22e-02  2.52e-04  2.69e+00  1.04e-02  2.34e-02  9.90e-01  
+  3  -2.5035e-01  -2.5255e-01  2.20e-03  2.56e-06  2.83e-02  4.35e-04  9.61e-04  9.90e-01  
+  4  -2.5050e-01  -2.5052e-01  2.58e-05  2.57e-08  2.82e-04  4.97e-06  1.13e-05  9.90e-01  
+  5  -2.5050e-01  -2.5050e-01  2.59e-07  2.57e-10  2.82e-06  4.98e-08  1.13e-07  9.90e-01  
+  6  -2.5050e-01  -2.5050e-01  2.59e-09  2.57e-12  2.82e-08  4.98e-10  1.13e-09  9.90e-01  
+  7  -2.5050e-01  -2.5050e-01  2.59e-11  2.57e-14  2.82e-10  4.98e-12  1.13e-11  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 244.807µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +6.6814e-01  -4.5816e+01  4.65e+01  1.64e-16  6.48e-02  1.00e+00  1.91e+01   ------   
+  1  +4.6486e-01  -2.7041e+00  3.17e+00  2.32e-16  3.80e-02  7.17e-02  1.31e+00  9.32e-01  
+  2  -1.0948e-01  -6.4261e-01  5.33e-01  1.45e-16  2.39e-03  3.99e-02  1.89e-01  9.90e-01  
+  3  -2.2174e-01  -2.9243e-01  7.07e-02  8.52e-17  3.44e-05  4.76e-03  2.05e-02  9.90e-01  
+  4  -2.4691e-01  -2.5389e-01  6.98e-03  1.07e-15  3.84e-07  4.26e-04  1.74e-03  9.90e-01  
+  5  -2.5038e-01  -2.5061e-01  2.30e-04  7.73e-16  3.94e-09  1.39e-05  5.49e-05  9.90e-01  
+  6  -2.5050e-01  -2.5050e-01  2.51e-06  6.15e-17  3.94e-11  1.52e-07  5.97e-07  9.90e-01  
+  7  -2.5050e-01  -2.5050e-01  2.51e-08  5.85e-14  8.48e-12  1.52e-09  5.97e-09  9.90e-01  
+  8  -2.5050e-01  -2.5050e-01  2.51e-10  1.16e-15  1.74e-13  1.52e-11  5.97e-11  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 281.579µs
+[       OK ] DataUpdatingTest.update_A_vector_form (0 ms)
+[ RUN      ] DataUpdatingTest.update_A_vector_form_eigen
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 226.449µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.3971e-01  -1.2495e+01  1.24e+01  3.01e-01  7.26e+02  1.00e+00  2.91e+00   ------   
+  1  -2.1206e-01  -9.3469e-01  7.23e-01  2.22e-02  1.88e+02  8.67e-02  2.67e-01  9.48e-01  
+  2  -2.4923e-01  -3.0141e-01  5.22e-02  2.52e-04  2.69e+00  1.04e-02  2.34e-02  9.90e-01  
+  3  -2.5035e-01  -2.5255e-01  2.20e-03  2.56e-06  2.83e-02  4.35e-04  9.61e-04  9.90e-01  
+  4  -2.5050e-01  -2.5052e-01  2.58e-05  2.57e-08  2.82e-04  4.97e-06  1.13e-05  9.90e-01  
+  5  -2.5050e-01  -2.5050e-01  2.59e-07  2.57e-10  2.82e-06  4.98e-08  1.13e-07  9.90e-01  
+  6  -2.5050e-01  -2.5050e-01  2.59e-09  2.57e-12  2.82e-08  4.98e-10  1.13e-09  9.90e-01  
+  7  -2.5050e-01  -2.5050e-01  2.59e-11  2.57e-14  2.82e-10  4.98e-12  1.13e-11  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 245.207µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +6.6814e-01  -4.5816e+01  4.65e+01  1.64e-16  6.48e-02  1.00e+00  1.91e+01   ------   
+  1  +4.6486e-01  -2.7041e+00  3.17e+00  2.32e-16  3.80e-02  7.17e-02  1.31e+00  9.32e-01  
+  2  -1.0948e-01  -6.4261e-01  5.33e-01  1.45e-16  2.39e-03  3.99e-02  1.89e-01  9.90e-01  
+  3  -2.2174e-01  -2.9243e-01  7.07e-02  8.52e-17  3.44e-05  4.76e-03  2.05e-02  9.90e-01  
+  4  -2.4691e-01  -2.5389e-01  6.98e-03  1.07e-15  3.84e-07  4.26e-04  1.74e-03  9.90e-01  
+  5  -2.5038e-01  -2.5061e-01  2.30e-04  7.73e-16  3.94e-09  1.39e-05  5.49e-05  9.90e-01  
+  6  -2.5050e-01  -2.5050e-01  2.51e-06  6.15e-17  3.94e-11  1.52e-07  5.97e-07  9.90e-01  
+  7  -2.5050e-01  -2.5050e-01  2.51e-08  5.85e-14  8.48e-12  1.52e-09  5.97e-09  9.90e-01  
+  8  -2.5050e-01  -2.5050e-01  2.51e-10  1.16e-15  1.74e-13  1.52e-11  5.97e-11  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 277.319µs
+[       OK ] DataUpdatingTest.update_A_vector_form_eigen (0 ms)
+[ RUN      ] DataUpdatingTest.update_A_partial
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 227.178µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -5.2648e-02  -1.1770e+01  1.17e+01  6.77e-17  5.58e-01  1.00e+00  2.28e+00   ------   
+  1  -2.2554e-01  -1.2213e+00  9.96e-01  6.28e-17  1.69e-01  1.21e-01  1.85e-01  9.28e-01  
+  2  -2.8546e-01  -3.9331e-01  1.08e-01  7.78e-17  2.76e-03  1.26e-02  1.56e-02  9.90e-01  
+  3  -2.8571e-01  -2.8724e-01  1.53e-03  1.03e-16  2.88e-05  1.78e-04  2.18e-04  9.90e-01  
+  4  -2.8571e-01  -2.8573e-01  1.54e-05  1.29e-16  2.89e-07  1.79e-06  2.20e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  1.54e-07  1.34e-14  2.89e-09  1.79e-08  2.20e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  1.54e-09  2.98e-16  2.89e-11  1.79e-10  2.20e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 222.209µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +5.8896e-02  -1.7717e+01  1.78e+01  6.93e-17  6.79e-04  1.00e+00  3.76e+00   ------   
+  1  -2.3926e-01  -1.3922e+00  1.15e+00  5.97e-17  1.61e-04  5.97e-02  2.39e-01  9.53e-01  
+  2  -2.8532e-01  -3.7098e-01  8.57e-02  8.07e-17  2.55e-06  4.11e-03  1.58e-02  9.90e-01  
+  3  -2.8571e-01  -2.8730e-01  1.59e-03  4.71e-17  2.68e-08  7.60e-05  2.88e-04  9.90e-01  
+  4  -2.8571e-01  -2.8573e-01  1.61e-05  1.05e-16  2.68e-10  7.73e-07  2.93e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  1.61e-07  8.00e-15  2.61e-12  7.73e-09  2.93e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  1.61e-09  1.70e-16  2.52e-14  7.73e-11  2.93e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 223.258µs
+[       OK ] DataUpdatingTest.update_A_partial (0 ms)
+[ RUN      ] DataUpdatingTest.update_A_partial_eigen
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 225.328µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -5.2648e-02  -1.1770e+01  1.17e+01  6.77e-17  5.58e-01  1.00e+00  2.28e+00   ------   
+  1  -2.2554e-01  -1.2213e+00  9.96e-01  6.28e-17  1.69e-01  1.21e-01  1.85e-01  9.28e-01  
+  2  -2.8546e-01  -3.9331e-01  1.08e-01  7.78e-17  2.76e-03  1.26e-02  1.56e-02  9.90e-01  
+  3  -2.8571e-01  -2.8724e-01  1.53e-03  1.03e-16  2.88e-05  1.78e-04  2.18e-04  9.90e-01  
+  4  -2.8571e-01  -2.8573e-01  1.54e-05  1.29e-16  2.89e-07  1.79e-06  2.20e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  1.54e-07  1.34e-14  2.89e-09  1.79e-08  2.20e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  1.54e-09  2.98e-16  2.89e-11  1.79e-10  2.20e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 220.67µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +1.8385e+00  -2.3820e+01  1.40e+01  1.74e-01  9.49e-01  1.00e+00  4.75e+00   ------   
+  1  +5.5212e-02  -5.0117e+00  5.07e+00  3.10e-02  4.72e-01  3.46e-01  7.40e-01  8.88e-01  
+  2  -2.7113e-01  -9.5593e-01  6.85e-01  4.32e-04  1.65e-02  4.58e-02  6.66e-02  9.90e-01  
+  3  -2.8567e-01  -3.1728e-01  3.16e-02  4.62e-06  2.22e-04  1.96e-03  2.84e-03  9.90e-01  
+  4  -2.8571e-01  -2.8611e-01  4.00e-04  4.64e-08  2.26e-06  2.48e-05  3.57e-05  9.90e-01  
+  5  -2.8571e-01  -2.8572e-01  4.01e-06  4.64e-10  2.26e-08  2.49e-07  3.58e-07  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  4.01e-08  4.64e-12  2.26e-10  2.49e-09  3.58e-09  9.90e-01  
+  7  -2.8571e-01  -2.8571e-01  4.01e-10  4.64e-14  2.26e-12  2.49e-11  3.58e-11  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 246.868µs
+[       OK ] DataUpdatingTest.update_A_partial_eigen (0 ms)
+[ RUN      ] DataUpdatingTest.update_q
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 226.429µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.4251e+05  -2.8308e+04  4.03e+00  5.39e-01  7.60e-17  1.00e+00  2.51e+04   ------   
+  1  -2.2525e+04  -1.5167e+04  4.85e-01  6.58e-01  1.78e-16  7.91e+01  9.49e+02  9.65e-01  
+  2  -5.0491e+03  -1.0252e+04  1.03e+00  3.95e-01  5.65e-17  6.23e+01  8.25e+01  9.26e-01  
+  3  -8.7329e+02  -1.1437e+03  3.10e-01  2.01e-01  3.10e-17  6.07e+02  4.86e+01  6.84e-01  
+  4  -9.9281e+02  -1.0104e+03  1.77e-02  1.21e-02  9.95e-17  2.53e+01  2.49e+00  9.49e-01  
+  5  -1.0000e+03  -1.0052e+03  5.18e-03  1.24e-03  3.46e-19  1.84e+00  3.31e-01  9.90e-01  
+  6  -9.9905e+02  -9.9952e+02  4.73e-04  8.17e-05  3.48e-19  1.32e-01  2.60e-02  9.39e-01  
+  7  -9.9900e+02  -9.9903e+02  3.01e-05  8.96e-07  7.24e-19  6.02e-03  1.14e-03  9.90e-01  
+  8  -9.9900e+02  -9.9900e+02  3.73e-07  8.98e-09  1.04e-16  7.38e-05  1.39e-05  9.90e-01  
+  9  -9.9900e+02  -9.9900e+02  3.74e-09  8.96e-11  1.13e-15  7.40e-07  1.40e-07  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 310.518µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -4.1992e+02  -6.0308e+03  1.34e+01  1.21e-01  5.98e-17  1.00e+00  1.88e+00   ------   
+  1  -7.7905e+02  -1.3269e+03  7.03e-01  1.15e-02  1.90e-16  1.03e-01  2.15e-01  8.89e-01  
+  2  -9.9687e+02  -1.0032e+03  6.34e-03  1.23e-04  9.44e-17  1.28e-03  2.53e-03  9.90e-01  
+  3  -9.9898e+02  -9.9904e+02  6.37e-05  1.23e-06  9.45e-17  1.29e-05  2.55e-05  9.90e-01  
+  4  -9.9900e+02  -9.9900e+02  6.37e-07  1.23e-08  5.61e-13  1.29e-07  2.55e-07  9.90e-01  
+  5  -9.9900e+02  -9.9900e+02  6.37e-09  1.23e-10  1.12e-14  1.29e-09  2.55e-09  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 194.569µs
+[       OK ] DataUpdatingTest.update_q (0 ms)
+[ RUN      ] DataUpdatingTest.update_q_eigen
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 262.188µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.4251e+05  -2.8308e+04  4.03e+00  5.39e-01  7.60e-17  1.00e+00  2.51e+04   ------   
+  1  -2.2525e+04  -1.5167e+04  4.85e-01  6.58e-01  1.78e-16  7.91e+01  9.49e+02  9.65e-01  
+  2  -5.0491e+03  -1.0252e+04  1.03e+00  3.95e-01  5.65e-17  6.23e+01  8.25e+01  9.26e-01  
+  3  -8.7329e+02  -1.1437e+03  3.10e-01  2.01e-01  3.10e-17  6.07e+02  4.86e+01  6.84e-01  
+  4  -9.9281e+02  -1.0104e+03  1.77e-02  1.21e-02  9.95e-17  2.53e+01  2.49e+00  9.49e-01  
+  5  -1.0000e+03  -1.0052e+03  5.18e-03  1.24e-03  3.46e-19  1.84e+00  3.31e-01  9.90e-01  
+  6  -9.9905e+02  -9.9952e+02  4.73e-04  8.17e-05  3.48e-19  1.32e-01  2.60e-02  9.39e-01  
+  7  -9.9900e+02  -9.9903e+02  3.01e-05  8.96e-07  7.24e-19  6.02e-03  1.14e-03  9.90e-01  
+  8  -9.9900e+02  -9.9900e+02  3.73e-07  8.98e-09  1.04e-16  7.38e-05  1.39e-05  9.90e-01  
+  9  -9.9900e+02  -9.9900e+02  3.74e-09  8.96e-11  1.13e-15  7.40e-07  1.40e-07  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 309.667µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -4.1992e+02  -6.0308e+03  1.34e+01  1.21e-01  5.98e-17  1.00e+00  1.88e+00   ------   
+  1  -7.7905e+02  -1.3269e+03  7.03e-01  1.15e-02  1.90e-16  1.03e-01  2.15e-01  8.89e-01  
+  2  -9.9687e+02  -1.0032e+03  6.34e-03  1.23e-04  9.44e-17  1.28e-03  2.53e-03  9.90e-01  
+  3  -9.9898e+02  -9.9904e+02  6.37e-05  1.23e-06  9.45e-17  1.29e-05  2.55e-05  9.90e-01  
+  4  -9.9900e+02  -9.9900e+02  6.37e-07  1.23e-08  5.61e-13  1.29e-07  2.55e-07  9.90e-01  
+  5  -9.9900e+02  -9.9900e+02  6.37e-09  1.23e-10  1.12e-14  1.29e-09  2.55e-09  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 196.459µs
+[       OK ] DataUpdatingTest.update_q_eigen (0 ms)
+[ RUN      ] DataUpdatingTest.update_q_partial
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 226.359µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.4251e+05  -2.8308e+04  4.03e+00  5.39e-01  7.60e-17  1.00e+00  2.51e+04   ------   
+  1  -2.2525e+04  -1.5167e+04  4.85e-01  6.58e-01  1.78e-16  7.91e+01  9.49e+02  9.65e-01  
+  2  -5.0491e+03  -1.0252e+04  1.03e+00  3.95e-01  5.65e-17  6.23e+01  8.25e+01  9.26e-01  
+  3  -8.7329e+02  -1.1437e+03  3.10e-01  2.01e-01  3.10e-17  6.07e+02  4.86e+01  6.84e-01  
+  4  -9.9281e+02  -1.0104e+03  1.77e-02  1.21e-02  9.95e-17  2.53e+01  2.49e+00  9.49e-01  
+  5  -1.0000e+03  -1.0052e+03  5.18e-03  1.24e-03  3.46e-19  1.84e+00  3.31e-01  9.90e-01  
+  6  -9.9905e+02  -9.9952e+02  4.73e-04  8.17e-05  3.48e-19  1.32e-01  2.60e-02  9.39e-01  
+  7  -9.9900e+02  -9.9903e+02  3.01e-05  8.96e-07  7.24e-19  6.02e-03  1.14e-03  9.90e-01  
+  8  -9.9900e+02  -9.9900e+02  3.73e-07  8.98e-09  1.04e-16  7.38e-05  1.39e-05  9.90e-01  
+  9  -9.9900e+02  -9.9900e+02  3.74e-09  8.96e-11  1.13e-15  7.40e-07  1.40e-07  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 310.438µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -4.1992e+02  -6.0308e+03  1.34e+01  1.21e-01  5.98e-17  1.00e+00  1.88e+00   ------   
+  1  -7.7905e+02  -1.3269e+03  7.03e-01  1.15e-02  1.90e-16  1.03e-01  2.15e-01  8.89e-01  
+  2  -9.9687e+02  -1.0032e+03  6.34e-03  1.23e-04  9.44e-17  1.28e-03  2.53e-03  9.90e-01  
+  3  -9.9898e+02  -9.9904e+02  6.37e-05  1.23e-06  9.45e-17  1.29e-05  2.55e-05  9.90e-01  
+  4  -9.9900e+02  -9.9900e+02  6.37e-07  1.23e-08  5.61e-13  1.29e-07  2.55e-07  9.90e-01  
+  5  -9.9900e+02  -9.9900e+02  6.37e-09  1.23e-10  1.12e-14  1.29e-09  2.55e-09  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 195.339µs
+[       OK ] DataUpdatingTest.update_q_partial (0 ms)
+[ RUN      ] DataUpdatingTest.update_q_partial_eigen
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 224.478µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.4251e+05  -2.8308e+04  4.03e+00  5.39e-01  7.60e-17  1.00e+00  2.51e+04   ------   
+  1  -2.2525e+04  -1.5167e+04  4.85e-01  6.58e-01  1.78e-16  7.91e+01  9.49e+02  9.65e-01  
+  2  -5.0491e+03  -1.0252e+04  1.03e+00  3.95e-01  5.65e-17  6.23e+01  8.25e+01  9.26e-01  
+  3  -8.7329e+02  -1.1437e+03  3.10e-01  2.01e-01  3.10e-17  6.07e+02  4.86e+01  6.84e-01  
+  4  -9.9281e+02  -1.0104e+03  1.77e-02  1.21e-02  9.95e-17  2.53e+01  2.49e+00  9.49e-01  
+  5  -1.0000e+03  -1.0052e+03  5.18e-03  1.24e-03  3.46e-19  1.84e+00  3.31e-01  9.90e-01  
+  6  -9.9905e+02  -9.9952e+02  4.73e-04  8.17e-05  3.48e-19  1.32e-01  2.60e-02  9.39e-01  
+  7  -9.9900e+02  -9.9903e+02  3.01e-05  8.96e-07  7.24e-19  6.02e-03  1.14e-03  9.90e-01  
+  8  -9.9900e+02  -9.9900e+02  3.73e-07  8.98e-09  1.04e-16  7.38e-05  1.39e-05  9.90e-01  
+  9  -9.9900e+02  -9.9900e+02  3.74e-09  8.96e-11  1.13e-15  7.40e-07  1.40e-07  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 309.087µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -4.1992e+02  -6.0308e+03  1.34e+01  1.21e-01  5.98e-17  1.00e+00  1.88e+00   ------   
+  1  -7.7905e+02  -1.3269e+03  7.03e-01  1.15e-02  1.90e-16  1.03e-01  2.15e-01  8.89e-01  
+  2  -9.9687e+02  -1.0032e+03  6.34e-03  1.23e-04  9.44e-17  1.28e-03  2.53e-03  9.90e-01  
+  3  -9.9898e+02  -9.9904e+02  6.37e-05  1.23e-06  9.45e-17  1.29e-05  2.55e-05  9.90e-01  
+  4  -9.9900e+02  -9.9900e+02  6.37e-07  1.23e-08  5.61e-13  1.29e-07  2.55e-07  9.90e-01  
+  5  -9.9900e+02  -9.9900e+02  6.37e-09  1.23e-10  1.12e-14  1.29e-09  2.55e-09  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 195.408µs
+[       OK ] DataUpdatingTest.update_q_partial_eigen (0 ms)
+[ RUN      ] DataUpdatingTest.update_b
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 225.088µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +1.8680e-01  -6.2953e+00  6.48e+00  1.62e-01  3.87e-17  1.00e+00  2.06e+00   ------   
+  1  -6.2451e-02  -5.9113e-01  5.29e-01  1.13e-02  1.42e-16  7.24e-02  2.09e-01  9.30e-01  
+  2  -2.0987e-01  -3.0505e-01  9.52e-02  1.47e-04  0.00e+00  1.39e-02  2.76e-02  9.90e-01  
+  3  -2.4387e-01  -2.5504e-01  1.12e-02  1.61e-06  9.01e-17  1.55e-03  2.65e-03  9.90e-01  
+  4  -2.4970e-01  -2.5022e-01  5.19e-04  1.67e-08  5.87e-17  7.06e-05  1.15e-04  9.90e-01  
+  5  -2.5000e-01  -2.5000e-01  6.34e-06  1.67e-10  6.85e-17  8.63e-07  1.40e-06  9.90e-01  
+  6  -2.5000e-01  -2.5000e-01  6.36e-08  1.66e-12  1.47e-13  8.66e-09  1.40e-08  9.90e-01  
+  7  -2.5000e-01  -2.5000e-01  6.36e-10  1.64e-14  2.99e-15  8.66e-11  1.40e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 248.477µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +1.8680e-01  -6.2953e+00  6.48e+00  1.62e-01  3.87e-17  1.00e+00  2.06e+00   ------   
+  1  -6.2451e-02  -5.9113e-01  5.29e-01  1.13e-02  1.42e-16  7.24e-02  2.09e-01  9.30e-01  
+  2  -2.0987e-01  -3.0505e-01  9.52e-02  1.47e-04  0.00e+00  1.39e-02  2.76e-02  9.90e-01  
+  3  -2.4387e-01  -2.5504e-01  1.12e-02  1.61e-06  9.01e-17  1.55e-03  2.65e-03  9.90e-01  
+  4  -2.4970e-01  -2.5022e-01  5.19e-04  1.67e-08  5.87e-17  7.06e-05  1.15e-04  9.90e-01  
+  5  -2.5000e-01  -2.5000e-01  6.34e-06  1.67e-10  6.85e-17  8.63e-07  1.40e-06  9.90e-01  
+  6  -2.5000e-01  -2.5000e-01  6.36e-08  1.66e-12  1.47e-13  8.66e-09  1.40e-08  9.90e-01  
+  7  -2.5000e-01  -2.5000e-01  6.36e-10  1.64e-14  2.99e-15  8.66e-11  1.40e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 250.578µs
+[       OK ] DataUpdatingTest.update_b (0 ms)
+[ RUN      ] DataUpdatingTest.update_b_eigen
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 225.289µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +1.8680e-01  -6.2953e+00  6.48e+00  1.62e-01  3.87e-17  1.00e+00  2.06e+00   ------   
+  1  -6.2451e-02  -5.9113e-01  5.29e-01  1.13e-02  1.42e-16  7.24e-02  2.09e-01  9.30e-01  
+  2  -2.0987e-01  -3.0505e-01  9.52e-02  1.47e-04  0.00e+00  1.39e-02  2.76e-02  9.90e-01  
+  3  -2.4387e-01  -2.5504e-01  1.12e-02  1.61e-06  9.01e-17  1.55e-03  2.65e-03  9.90e-01  
+  4  -2.4970e-01  -2.5022e-01  5.19e-04  1.67e-08  5.87e-17  7.06e-05  1.15e-04  9.90e-01  
+  5  -2.5000e-01  -2.5000e-01  6.34e-06  1.67e-10  6.85e-17  8.63e-07  1.40e-06  9.90e-01  
+  6  -2.5000e-01  -2.5000e-01  6.36e-08  1.66e-12  1.47e-13  8.66e-09  1.40e-08  9.90e-01  
+  7  -2.5000e-01  -2.5000e-01  6.36e-10  1.64e-14  2.99e-15  8.66e-11  1.40e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 248.038µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +1.8680e-01  -6.2953e+00  6.48e+00  1.62e-01  3.87e-17  1.00e+00  2.06e+00   ------   
+  1  -6.2451e-02  -5.9113e-01  5.29e-01  1.13e-02  1.42e-16  7.24e-02  2.09e-01  9.30e-01  
+  2  -2.0987e-01  -3.0505e-01  9.52e-02  1.47e-04  0.00e+00  1.39e-02  2.76e-02  9.90e-01  
+  3  -2.4387e-01  -2.5504e-01  1.12e-02  1.61e-06  9.01e-17  1.55e-03  2.65e-03  9.90e-01  
+  4  -2.4970e-01  -2.5022e-01  5.19e-04  1.67e-08  5.87e-17  7.06e-05  1.15e-04  9.90e-01  
+  5  -2.5000e-01  -2.5000e-01  6.34e-06  1.67e-10  6.85e-17  8.63e-07  1.40e-06  9.90e-01  
+  6  -2.5000e-01  -2.5000e-01  6.36e-08  1.66e-12  1.47e-13  8.66e-09  1.40e-08  9.90e-01  
+  7  -2.5000e-01  -2.5000e-01  6.36e-10  1.64e-14  2.99e-15  8.66e-11  1.40e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 250.318µs
+[       OK ] DataUpdatingTest.update_b_eigen (0 ms)
+[ RUN      ] DataUpdatingTest.update_b_partial
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 224.899µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -4.6023e+00  4.42e+00  3.97e-01  4.66e-17  1.00e+00  3.17e+00   ------   
+  1  -1.2870e-01  -3.5325e-01  2.25e-01  2.37e-02  2.05e-17  6.10e-02  2.16e-01  9.65e-01  
+  2  -1.2500e-01  -1.3974e-01  1.47e-02  3.16e-04  5.49e-17  3.87e-03  8.60e-03  9.87e-01  
+  3  -1.2500e-01  -1.2521e-01  2.10e-04  3.29e-06  3.89e-17  5.53e-05  1.17e-04  9.90e-01  
+  4  -1.2500e-01  -1.2500e-01  2.12e-06  3.30e-08  8.92e-19  5.57e-07  1.18e-06  9.90e-01  
+  5  -1.2500e-01  -1.2500e-01  2.12e-08  3.30e-10  4.24e-15  5.57e-09  1.18e-08  9.90e-01  
+  6  -1.2500e-01  -1.2500e-01  2.12e-10  3.30e-12  1.03e-16  5.57e-11  1.18e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 225.948µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -4.6023e+00  4.42e+00  3.97e-01  4.66e-17  1.00e+00  3.17e+00   ------   
+  1  -1.2870e-01  -3.5325e-01  2.25e-01  2.37e-02  2.05e-17  6.10e-02  2.16e-01  9.65e-01  
+  2  -1.2500e-01  -1.3974e-01  1.47e-02  3.16e-04  5.49e-17  3.87e-03  8.60e-03  9.87e-01  
+  3  -1.2500e-01  -1.2521e-01  2.10e-04  3.29e-06  3.89e-17  5.53e-05  1.17e-04  9.90e-01  
+  4  -1.2500e-01  -1.2500e-01  2.12e-06  3.30e-08  8.92e-19  5.57e-07  1.18e-06  9.90e-01  
+  5  -1.2500e-01  -1.2500e-01  2.12e-08  3.30e-10  4.24e-15  5.57e-09  1.18e-08  9.90e-01  
+  6  -1.2500e-01  -1.2500e-01  2.12e-10  3.30e-12  1.03e-16  5.57e-11  1.18e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 227.839µs
+[       OK ] DataUpdatingTest.update_b_partial (0 ms)
+[ RUN      ] DataUpdatingTest.update_b_partial_eigen
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -9.4778e+00  9.30e+00  9.23e-17  3.75e-17  1.00e+00  2.06e+00   ------   
+  1  -2.6298e-01  -7.6409e-01  5.01e-01  1.41e-16  2.40e-16  5.00e-02  1.10e-01  9.54e-01  
+  2  -2.8542e-01  -3.2407e-01  3.86e-02  1.16e-16  1.23e-16  3.48e-03  7.49e-03  9.90e-01  
+  3  -2.8571e-01  -2.8661e-01  8.99e-04  5.82e-17  1.51e-16  8.02e-05  1.70e-04  9.90e-01  
+  4  -2.8571e-01  -2.8572e-01  9.30e-06  1.01e-16  1.15e-16  8.30e-07  1.75e-06  9.90e-01  
+  5  -2.8571e-01  -2.8571e-01  9.30e-08  1.24e-14  6.38e-14  8.30e-09  1.75e-08  9.90e-01  
+  6  -2.8571e-01  -2.8571e-01  9.30e-10  2.45e-16  1.36e-15  8.30e-11  1.75e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 224.368µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -4.6023e+00  4.42e+00  3.97e-01  4.66e-17  1.00e+00  3.17e+00   ------   
+  1  -1.2870e-01  -3.5325e-01  2.25e-01  2.37e-02  2.05e-17  6.10e-02  2.16e-01  9.65e-01  
+  2  -1.2500e-01  -1.3974e-01  1.47e-02  3.16e-04  5.49e-17  3.87e-03  8.60e-03  9.87e-01  
+  3  -1.2500e-01  -1.2521e-01  2.10e-04  3.29e-06  3.89e-17  5.53e-05  1.17e-04  9.90e-01  
+  4  -1.2500e-01  -1.2500e-01  2.12e-06  3.30e-08  8.92e-19  5.57e-07  1.18e-06  9.90e-01  
+  5  -1.2500e-01  -1.2500e-01  2.12e-08  3.30e-10  4.24e-15  5.57e-09  1.18e-08  9.90e-01  
+  6  -1.2500e-01  -1.2500e-01  2.12e-10  3.30e-12  1.03e-16  5.57e-11  1.18e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 225.559µs
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 4
+  nnz(P)        = 3
+  nnz(A)        = 4
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 4
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  -1.8066e-01  -4.6023e+00  4.42e+00  3.97e-01  4.66e-17  1.00e+00  3.17e+00   ------   
+  1  -1.2870e-01  -3.5325e-01  2.25e-01  2.37e-02  2.05e-17  6.10e-02  2.16e-01  9.65e-01  
+  2  -1.2500e-01  -1.3974e-01  1.47e-02  3.16e-04  5.49e-17  3.87e-03  8.60e-03  9.87e-01  
+  3  -1.2500e-01  -1.2521e-01  2.10e-04  3.29e-06  3.89e-17  5.53e-05  1.17e-04  9.90e-01  
+  4  -1.2500e-01  -1.2500e-01  2.12e-06  3.30e-08  8.92e-19  5.57e-07  1.18e-06  9.90e-01  
+  5  -1.2500e-01  -1.2500e-01  2.12e-08  3.30e-10  4.24e-15  5.57e-09  1.18e-08  9.90e-01  
+  6  -1.2500e-01  -1.2500e-01  2.12e-10  3.30e-12  1.03e-16  5.57e-11  1.18e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 227.558µs
+[       OK ] DataUpdatingTest.update_b_partial_eigen (0 ms)
+[----------] 18 tests from DataUpdatingTest (17 ms total)
+
+[----------] 1 test from GetInfoTest
+[ RUN      ] GetInfoTest.Feasible
+-------------------------------------------------------------
+           Clarabel.rs v0.11.1  -  Clever Acronym                
+                  *** debug build ***                        
+                   (c) Paul Goulart                          
+                University of Oxford, 2022                   
+-------------------------------------------------------------
+
+problem:
+  variables     = 2
+  constraints   = 6
+  nnz(P)        = 3
+  nnz(A)        = 8
+  cones (total) = 1
+    : Nonnegative = 1,  numel = 6
+
+settings:
+  linear algebra: direct / qdldl, precision: 64 bit (1 thread)
+  max iter = 200, time limit = Inf,  max step = 0.990
+  tol_feas = 1.0e-8, tol_gap_abs = 1.0e-8, tol_gap_rel = 1.0e-8,
+  static reg : on, ϵ1 = 1.0e-8, ϵ2 = 4.9e-32
+  dynamic reg: on, ϵ = 1.0e-13, δ = 2.0e-7
+  iter refine: on, reltol = 1.0e-13, abstol = 1.0e-12,
+               max iter = 10, stop ratio = 5.0
+  equilibrate: on, min_scale = 1.0e-4, max_scale = 1.0e4
+               max iter = 10
+
+iter    pcost        dcost       gap       pres      dres      k/t        μ       step      
+---------------------------------------------------------------------------------------------
+  0  +8.9060e-01  -1.3057e+00  2.20e+00  5.55e-01  1.89e-16  1.00e+00  2.47e+00   ------   
+  1  +1.4696e+00  +1.0134e+00  4.50e-01  1.45e-01  1.44e-16  1.48e-01  6.24e-01  8.06e-01  
+  2  +1.8977e+00  +1.8463e+00  2.78e-02  2.75e-03  1.22e-16  8.33e-03  3.51e-02  9.90e-01  
+  3  +1.8851e+00  +1.8753e+00  5.21e-03  8.62e-05  2.01e-16  1.20e-03  4.42e-03  9.72e-01  
+  4  +1.8811e+00  +1.8791e+00  1.07e-03  1.04e-05  9.95e-17  2.53e-04  7.58e-04  8.89e-01  
+  5  +1.8802e+00  +1.8799e+00  1.50e-04  1.08e-06  7.09e-17  3.62e-05  9.79e-05  8.99e-01  
+  6  +1.8800e+00  +1.8800e+00  5.24e-06  2.99e-08  7.10e-17  1.28e-06  3.36e-06  9.73e-01  
+  7  +1.8800e+00  +1.8800e+00  5.71e-08  3.18e-10  1.00e-16  1.40e-08  3.67e-08  9.89e-01  
+  8  +1.8800e+00  +1.8800e+00  5.72e-10  3.18e-12  5.02e-15  1.40e-10  3.67e-10  9.90e-01  
+---------------------------------------------------------------------------------------------
+Terminated with status = Solved
+solve time = 351.897µs
+[       OK ] GetInfoTest.Feasible (0 ms)
+[----------] 1 test from GetInfoTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 46 tests from 13 test suites ran. (37 ms total)
+[  PASSED  ] 46 tests.
+Building release library...
+-- Clarabel.cpp: `Eigen3` package found.  Version 3.4.0.
+-- Cargo feature list: clarabel/buildinfo
+-- Cargo options: --release;--features=clarabel/buildinfo
+-- Clarabel.cpp: `googletest` targets not found. Attempting to fetch contents...
+-- Clarabel.cpp: `googletest` targets added.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/stu/dev/Clarabel.cpp/build
+    Updating crates.io index
+   Compiling proc-macro2 v1.0.95
+   Compiling unicode-ident v1.0.18
+   Compiling ident_case v1.0.1
+   Compiling fnv v1.0.7
+   Compiling serde v1.0.219
+   Compiling strsim v0.11.1
+   Compiling rustversion v1.0.21
+   Compiling memchr v2.7.5
+   Compiling syn v1.0.109
+   Compiling semver v1.0.26
+   Compiling libc v0.2.174
+   Compiling thiserror v2.0.12
+   Compiling serde_json v1.0.142
+   Compiling anyhow v1.0.98
+   Compiling camino v1.1.11
+   Compiling strsim v0.10.0
+   Compiling itoa v1.0.15
+   Compiling powerfmt v0.2.0
+   Compiling regex-syntax v0.8.5
+   Compiling ryu v1.0.20
+   Compiling deranged v0.4.0
+   Compiling num-conv v0.1.0
+   Compiling num_threads v0.1.7
+   Compiling time-core v0.1.4
+   Compiling autocfg v1.5.0
+   Compiling thiserror v1.0.69
+   Compiling either v1.15.0
+   Compiling paste v1.0.15
+   Compiling once_cell v1.21.3
+   Compiling cfg-if v1.0.1
+   Compiling lazy_static v1.5.0
+   Compiling itertools v0.11.0
+   Compiling aho-corasick v1.1.3
+   Compiling num-traits v0.2.19
+   Compiling vergen-lib v0.1.6
+   Compiling vergen v9.0.6
+   Compiling quote v1.0.40
+   Compiling syn v2.0.104
+   Compiling time v0.3.41
+   Compiling sysinfo v0.34.2
+   Compiling amd v0.2.2
+   Compiling regex-automata v0.4.9
+   Compiling darling_core v0.20.11
+   Compiling darling_core v0.14.4
+   Compiling regex v1.11.1
+   Compiling serde_derive v1.0.219
+   Compiling thiserror-impl v2.0.12
+   Compiling thiserror-impl v1.0.69
+   Compiling enum_dispatch v0.3.13
+   Compiling darling_macro v0.14.4
+   Compiling darling_macro v0.20.11
+   Compiling darling v0.14.4
+   Compiling derive_builder_core v0.11.2
+   Compiling darling v0.20.11
+   Compiling derive_builder_core v0.20.2
+   Compiling derive_builder_macro v0.11.2
+   Compiling derive_builder_macro v0.20.2
+   Compiling derive_builder v0.11.2
+   Compiling derive_builder v0.20.2
+   Compiling cargo-platform v0.1.9
+   Compiling rustc_version v0.4.1
+   Compiling serde-big-array v0.5.1
+   Compiling cargo_metadata v0.19.2
+   Compiling clarabel v0.11.1 (/home/stu/dev/Clarabel.cpp/Clarabel.rs)
+warning: hiding a lifetime that's elided elsewhere is confusing
+  --> /home/stu/dev/Clarabel.cpp/Clarabel.rs/src/solver/core/kktsolvers/direct/quasidef/datamaps.rs:26:39
+   |
+26 |     pub(crate) fn to_sparse_expansion(&self) -> Option<SparseExpansionCone<T>> {
+   |                                       ^^^^^            ---------------------- the same lifetime is hidden here
+   |                                       |
+   |                                       the lifetime is elided here
+   |
+   = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+   = note: `#[warn(mismatched_lifetime_syntaxes)]` on by default
+help: use `'_` for type paths
+   |
+26 |     pub(crate) fn to_sparse_expansion(&self) -> Option<SparseExpansionCone<'_, T>> {
+   |                                                                            +++
+
+warning: `clarabel` (lib) generated 1 warning
+   Compiling clarabel_c v0.1.0 (/home/stu/dev/Clarabel.cpp/rust_wrapper)
+    Finished `release` profile [optimized] target(s) in 12.33s
+    Updating crates.io index
+     Ignored package `cbindgen v0.29.0` is already installed, use --force to override
+[  0%] Built target libclarabel_c
+[  1%] Building C object examples/c/CMakeFiles/utils_c.dir/utils.c.o
+[  2%] Linking C static library libutils_c.a
+[  2%] Built target utils_c
+[  3%] Building C object examples/c/CMakeFiles/example_expcone.dir/example_expcone.c.o
+[  5%] Linking C executable example_expcone
+[  5%] Built target example_expcone
+[  6%] Building C object examples/c/CMakeFiles/example_lp.dir/example_lp.c.o
+[  7%] Linking C executable example_lp
+[  7%] Built target example_lp
+[  8%] Building C object examples/c/CMakeFiles/example_powcone.dir/example_powcone.c.o
+[ 10%] Linking C executable example_powcone
+[ 10%] Built target example_powcone
+[ 11%] Building C object examples/c/CMakeFiles/example_genpowcone.dir/example_genpowcone.c.o
+[ 12%] Linking C executable example_genpowcone
+[ 12%] Built target example_genpowcone
+[ 13%] Building C object examples/c/CMakeFiles/example_qp.dir/example_qp.c.o
+[ 15%] Linking C executable example_qp
+[ 15%] Built target example_qp
+[ 16%] Building C object examples/c/CMakeFiles/example_qp_f32.dir/example_qp_f32.c.o
+[ 17%] Linking C executable example_qp_f32
+[ 17%] Built target example_qp_f32
+[ 18%] Building C object examples/c/CMakeFiles/example_qp_f64.dir/example_qp_f64.c.o
+[ 20%] Linking C executable example_qp_f64
+[ 20%] Built target example_qp_f64
+[ 21%] Building C object examples/c/CMakeFiles/example_socp.dir/example_socp.c.o
+[ 22%] Linking C executable example_socp
+[ 22%] Built target example_socp
+[ 24%] Building C object examples/c/CMakeFiles/example_sdp.dir/example_sdp.c.o
+[ 25%] Linking C executable example_sdp
+[ 25%] Built target example_sdp
+[ 26%] Building C object examples/c/CMakeFiles/example_json.dir/example_json.c.o
+[ 27%] Linking C executable example_json
+[ 27%] Built target example_json
+[ 29%] Building C object examples/c/CMakeFiles/example_print_stream.dir/example_print_stream.c.o
+[ 30%] Linking C executable example_print_stream
+[ 30%] Built target example_print_stream
+[ 31%] Building C object examples/c/CMakeFiles/example_callback.dir/example_callback.c.o
+[ 32%] Linking C executable example_callback
+[ 32%] Built target example_callback
+[ 34%] Building C object examples/c/CMakeFiles/example_callback_with_state.dir/example_callback_with_state.c.o
+[ 35%] Linking C executable example_callback_with_state
+[ 35%] Built target example_callback_with_state
+[ 36%] Building C object examples/c/CMakeFiles/example_pardiso_mkl.dir/example_pardiso_mkl.c.o
+[ 37%] Linking C executable example_pardiso_mkl
+[ 37%] Built target example_pardiso_mkl
+[ 39%] Building CXX object examples/cpp/CMakeFiles/cpp_example_expcone.dir/example_expcone.cpp.o
+[ 40%] Linking CXX executable cpp_example_expcone
+[ 40%] Built target cpp_example_expcone
+[ 41%] Building CXX object examples/cpp/CMakeFiles/cpp_example_lp.dir/example_lp.cpp.o
+[ 43%] Linking CXX executable cpp_example_lp
+[ 43%] Built target cpp_example_lp
+[ 44%] Building CXX object examples/cpp/CMakeFiles/cpp_example_powcone.dir/example_powcone.cpp.o
+[ 45%] Linking CXX executable cpp_example_powcone
+[ 45%] Built target cpp_example_powcone
+[ 46%] Building CXX object examples/cpp/CMakeFiles/cpp_example_genpowcone.dir/example_genpowcone.cpp.o
+[ 48%] Linking CXX executable cpp_example_genpowcone
+[ 48%] Built target cpp_example_genpowcone
+[ 49%] Building CXX object examples/cpp/CMakeFiles/cpp_example_qp.dir/example_qp.cpp.o
+[ 50%] Linking CXX executable cpp_example_qp
+[ 50%] Built target cpp_example_qp
+[ 51%] Building CXX object examples/cpp/CMakeFiles/cpp_example_socp.dir/example_socp.cpp.o
+[ 53%] Linking CXX executable cpp_example_socp
+[ 53%] Built target cpp_example_socp
+[ 54%] Building CXX object examples/cpp/CMakeFiles/cpp_example_sdp.dir/example_sdp.cpp.o
+[ 55%] Linking CXX executable cpp_example_sdp
+[ 55%] Built target cpp_example_sdp
+[ 56%] Building CXX object examples/cpp/CMakeFiles/cpp_example_json.dir/example_json.cpp.o
+[ 58%] Linking CXX executable cpp_example_json
+[ 58%] Built target cpp_example_json
+[ 59%] Building CXX object examples/cpp/CMakeFiles/cpp_example_print_stream.dir/example_print_stream.cpp.o
+[ 60%] Linking CXX executable cpp_example_print_stream
+[ 60%] Built target cpp_example_print_stream
+[ 62%] Building CXX object examples/cpp/CMakeFiles/cpp_example_callback.dir/example_callback.cpp.o
+[ 63%] Linking CXX executable cpp_example_callback
+[ 63%] Built target cpp_example_callback
+[ 64%] Building CXX object examples/cpp/CMakeFiles/cpp_example_callback_with_state.dir/example_callback_with_state.cpp.o
+[ 65%] Linking CXX executable cpp_example_callback_with_state
+[ 65%] Built target cpp_example_callback_with_state
+[ 67%] Building CXX object examples/cpp/CMakeFiles/cpp_example_faer.dir/example_faer.cpp.o
+[ 68%] Linking CXX executable cpp_example_faer
+[ 68%] Built target cpp_example_faer
+[ 69%] Building CXX object examples/cpp/CMakeFiles/cpp_example_pardiso_mkl.dir/example_pardiso_mkl.cpp.o
+[ 70%] Linking CXX executable cpp_example_pardiso_mkl
+[ 70%] Built target cpp_example_pardiso_mkl
+[ 72%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 73%] Linking CXX static library ../../../lib/libgtest.a
+[ 73%] Built target gtest
+[ 74%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 75%] Linking CXX static library ../../../lib/libgtest_main.a
+[ 75%] Built target gtest_main
+[ 77%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/api_dimension_checks.cpp.o
+[ 78%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_lp.cpp.o
+[ 79%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_qp.cpp.o
+[ 81%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_eq_constrained.cpp.o
+[ 82%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_powcone.cpp.o
+[ 83%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_genpowcone.cpp.o
+[ 84%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_expcone.cpp.o
+[ 86%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_sdp.cpp.o
+[ 87%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_socp.cpp.o
+[ 88%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/basic_unconstrained.cpp.o
+[ 89%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/mixed_conic.cpp.o
+[ 91%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/data_updating.cpp.o
+[ 92%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/sdp_chordal.cpp.o
+[ 93%] Building CXX object tests/CMakeFiles/clarabel_cpp_tests.dir/get_info.cpp.o
+[ 94%] Linking CXX executable clarabel_cpp_tests
+[ 94%] Built target clarabel_cpp_tests
+[ 96%] Building CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 97%] Linking CXX static library ../../../lib/libgmock.a
+[ 97%] Built target gmock
+[ 98%] Building CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[100%] Linking CXX static library ../../../lib/libgmock_main.a
+[100%] Built target gmock_main
+Creating the install tarball...
+install: omitting directory 'include/c'
+install: omitting directory 'include/cpp'
+clarabel_cpp_v0.11.1/
+clarabel_cpp_v0.11.1/lib/
+clarabel_cpp_v0.11.1/lib/libclarabel_c.a
+clarabel_cpp_v0.11.1/lib/libclarabel_c-g.a
+clarabel_cpp_v0.11.1/lib/libclarabel_c.so
+clarabel_cpp_v0.11.1/lib/libclarabel_c-g.so
+clarabel_cpp_v0.11.1/bin/
+clarabel_cpp_v0.11.1/bin/example_qp_f32
+clarabel_cpp_v0.11.1/bin/example_sdp
+clarabel_cpp_v0.11.1/bin/example_callback
+clarabel_cpp_v0.11.1/bin/example_genpowcone
+clarabel_cpp_v0.11.1/bin/cpp_example_lp
+clarabel_cpp_v0.11.1/bin/example_callback_with_state
+clarabel_cpp_v0.11.1/bin/cpp_example_faer
+clarabel_cpp_v0.11.1/bin/cpp_example_qp
+clarabel_cpp_v0.11.1/bin/cpp_example_pardiso_mkl
+clarabel_cpp_v0.11.1/bin/example_socp
+clarabel_cpp_v0.11.1/bin/cpp_example_socp
+clarabel_cpp_v0.11.1/bin/example_qp
+clarabel_cpp_v0.11.1/bin/example_print_stream
+clarabel_cpp_v0.11.1/bin/example_pardiso_mkl
+clarabel_cpp_v0.11.1/bin/example_expcone
+clarabel_cpp_v0.11.1/bin/cpp_example_powcone
+clarabel_cpp_v0.11.1/bin/cpp_example_expcone
+clarabel_cpp_v0.11.1/bin/example_qp_f64
+clarabel_cpp_v0.11.1/bin/cpp_example_sdp
+clarabel_cpp_v0.11.1/bin/cpp_example_print_stream
+clarabel_cpp_v0.11.1/bin/example_lp
+clarabel_cpp_v0.11.1/bin/cpp_example_json
+clarabel_cpp_v0.11.1/bin/cpp_example_callback_with_state
+clarabel_cpp_v0.11.1/bin/example_powcone
+clarabel_cpp_v0.11.1/bin/cpp_example_genpowcone
+clarabel_cpp_v0.11.1/bin/cpp_example_callback
+clarabel_cpp_v0.11.1/bin/example_json
+clarabel_cpp_v0.11.1/include/
+clarabel_cpp_v0.11.1/include/clarabel.h
+clarabel_cpp_v0.11.1/include/c/
+clarabel_cpp_v0.11.1/include/c/DefaultSolution.h
+clarabel_cpp_v0.11.1/include/c/DefaultSettings.h
+clarabel_cpp_v0.11.1/include/c/CscMatrix.h
+clarabel_cpp_v0.11.1/include/c/DefaultInfo.h
+clarabel_cpp_v0.11.1/include/c/SupportedConeT.h
+clarabel_cpp_v0.11.1/include/c/ClarabelTypes.h
+clarabel_cpp_v0.11.1/include/c/DefaultSolver.h
+clarabel_cpp_v0.11.1/include/cpp/
+clarabel_cpp_v0.11.1/include/cpp/DefaultInfo.hpp
+clarabel_cpp_v0.11.1/include/cpp/DefaultSolution.hpp
+clarabel_cpp_v0.11.1/include/cpp/CscMatrix.hpp
+clarabel_cpp_v0.11.1/include/cpp/DefaultSettings.hpp
+clarabel_cpp_v0.11.1/include/cpp/DefaultSolver.hpp
+clarabel_cpp_v0.11.1/include/cpp/SupportedConeT.hpp
+clarabel_cpp_v0.11.1/include/clarabel.hpp
