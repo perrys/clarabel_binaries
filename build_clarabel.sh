@@ -17,6 +17,7 @@
 # sudo apt install patchelf
 
 VERSION=v0.11.1
+ARCH=`uname -m`
 
 git clone --recurse-submodules https://github.com/oxfordcontrol/Clarabel.cpp.git
 cd Clarabel.cpp
@@ -41,33 +42,33 @@ cmake --build .
 echo Creating the install tarball...
 cd ..
 
-target=clarabel_cpp_$VERSION
-install_dir=/var/tmp/$target
+TARGET=clarabel_cpp-$VERSION
+INSTALL_DIR=/var/tmp/$TARGET
 
-install -d $install_dir/include
-install -d $install_dir/include/c
-install -d $install_dir/include/cpp
-install -d $install_dir/lib
-install -d $install_dir/bin
+install -d $INSTALL_DIR/include
+install -d $INSTALL_DIR/include/c
+install -d $INSTALL_DIR/include/cpp
+install -d $INSTALL_DIR/lib
+install -d $INSTALL_DIR/bin
 
-install -t $install_dir/include include/* 
-install -t $install_dir/include/c include/c/* 
-install -t $install_dir/include/cpp include/cpp/* 
+install -t $INSTALL_DIR/include include/* 
+install -t $INSTALL_DIR/include/c include/c/* 
+install -t $INSTALL_DIR/include/cpp include/cpp/* 
 
-install -m644 rust_wrapper/target/debug/libclarabel_c.a $install_dir/lib/libclarabel_c-g.a
-install -m644 rust_wrapper/target/debug/libclarabel_c.so $install_dir/lib/libclarabel_c-g.so
-install -m644 rust_wrapper/target/release/libclarabel_c.a $install_dir/lib
-install -m644 rust_wrapper/target/release/libclarabel_c.so $install_dir/lib
+install -m644 rust_wrapper/target/debug/libclarabel_c.a $INSTALL_DIR/lib/libclarabel_c-g.a
+install -m644 rust_wrapper/target/debug/libclarabel_c.so $INSTALL_DIR/lib/libclarabel_c-g.so
+install -m644 rust_wrapper/target/release/libclarabel_c.a $INSTALL_DIR/lib
+install -m644 rust_wrapper/target/release/libclarabel_c.so $INSTALL_DIR/lib
 
-for file in   build/examples/c/example_* build/examples/cpp/cpp_example_*; do
-  install $file $install_dir/bin
+for file in build/examples/c/example_* build/examples/cpp/cpp_example_*; do
+  install $file $INSTALL_DIR/bin
   file=`basename $file`
-  patchelf --set-rpath '$ORIGIN/../lib' $install_dir/bin/$file
+  patchelf --set-rpath '$ORIGIN/../lib' $INSTALL_DIR/bin/$file
 done
 
-cd $install_dir/..
-tar zcvf ${target}.tgz $target
-
+cd $INSTALL_DIR/..
+tar zcvf ${TARGET}-${ARCH}.tgz $TARGET
+md5sum ${TARGET}-${ARCH}.tgz > ${TARGET}-${ARCH}.md5
 
 
 
